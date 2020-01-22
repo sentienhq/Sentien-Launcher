@@ -94,7 +94,7 @@
         android:summary="@string/user_interface_summary"
         android:title="@string/title_ui">
         <ListPreference
-            android:defaultValue="amoled-dark"
+            android:defaultValue="zeno-dark"
             android:entries="@array/themesEntries"
             android:entryValues="@array/themesValues"
             android:key="theme"

@@ -62,6 +62,23 @@
         <item name="textShadowRadius">0</item>
     </style>
 
+    <style name="AppThemeZeno" parent="BaseThemeDark">
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:textColor">@color/kiss_text_on_dark</item>
+        <item name="android:textColorSecondary">#7f7f7f</item>
+
+        <item name="searchColor">@android:color/white</item>
+        <item name="resultColor">@android:color/white</item>
+        <item name="resultShadowColor">@android:color/black</item>
+        <item name="listBackgroundColor">@android:color/black</item>
+        <item name="searchBackgroundOutline">@android:color/black</item>
+        <item name="searchBackgroundColor">@color/kiss_background_dark_black</item>
+
+        <item name="dividerDrawable">@android:color/transparent</item>
+        <item name="textShadowRadius">0</item>
+    </style>
+
     <style name="SettingThemeAmoledDark" parent="SettingThemeDark">
         <item name="android:windowShowWallpaper">false</item>
         <item name="android:windowBackground">@android:color/black</item>

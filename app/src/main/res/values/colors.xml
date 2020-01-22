@@ -11,5 +11,6 @@
     <color name="kiss_divider_dark">#434343</color>
     <color name="kiss_background_light_transparent">#88FFFFFF</color>
     <color name="kiss_background_dark_transparent">#88222222</color>
+    <color name="kiss_background_dark_black">#141414</color>
     <color name="kiss_green_semitransparent">#8800ffa1</color>
 </resources>
