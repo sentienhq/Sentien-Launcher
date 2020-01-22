@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="app_name">KISS launcher</string>
-    <string name="activity_setting">KISS-inställningar</string>
+    <string name="app_name">Zeno launcher</string>
+    <string name="activity_setting">Zeno-inställningar</string>
     <string name="ui_search_hint">Sök bland appar, kontakter, …</string>
     <string name="ui_item_search">Sök %1$s efter “%2$s”</string>
     <string name="ui_item_visit">Besök “%1$s”</string>
@@ -20,7 +20,7 @@
     <string name="ui_empty_2">Visa alltid din historik</string>
     <string name="ui_empty_2_sub">För snabb åtkomst</string>
     <string name="ui_empty_3">Snabb åtkomst till de mest använda apparna</string>
-    <string name="ui_empty_3_sub">KISS launcher lär sig av dina vanor</string>
+    <string name="ui_empty_3_sub">Zeno launcher lär sig av dina vanor</string>
 
     <string name="contacts_name">Kontakter</string>
 
@@ -34,7 +34,7 @@
     <string name="main_clear">Rensa sökfält</string>
     <string name="main_kiss">Visa favoriter and applista</string>
     <string name="main_kiss_back">Display history</string>
-    <string name="reset_name">Rensa din KISS-historik</string>
+    <string name="reset_name">Rensa din Zeno-historik</string>
     <string name="reset_excluded_apps_name">Nollställ listan för exkluderade appar</string>
     <string name="reset_excluded_apps_warn">Vill du verkligen nollställa listan för exkluderade appar?</string>
     <string name="ui_excluded_apps">Visa / redigera dina exkluderade appar</string>
@@ -91,11 +91,11 @@
     <string name="tags_add_title">Lägg till mellansrumsseparerade taggar</string>
     <string name="tags_confirmation_added">Tagg valdes</string>
     <string name="excluded_app_list_erased">Lista på exkluderade appar nollställdes.</string>
-    <string name="excluded_app_list_added">App exkluderades från KISS. Nollställ genom KISS-inställningar</string>
+    <string name="excluded_app_list_added">App exkluderades från Zeno. Nollställ genom Zeno-inställningar</string>
 
     <string name="removed_item">Raderades</string>
     <string name="menu_remove">Raderades från historik</string>
-    <string name="menu_exclude">Exkludera app från KISS</string>
+    <string name="menu_exclude">Exkludera app från Zeno</string>
     <string name="menu_app_details">Appinfo</string>
     <string name="menu_app_uninstall">Avinstallera</string>
     <string name="menu_app_hibernate">Viloläge</string>
@@ -116,8 +116,8 @@
     <string name="favorites_hide">Dölj favoritmenyn</string>
 
     <string name="restart_desc">Fixa temaproblem / nya kontakter visas ej</string>
-    <string name="restart_name">Starta om KISS</string>
-    <string name="restart_warn">Vill du starta om KISS? Om KISS inte är din standardstartsida kommer detta enbart stänga av appen.</string>
+    <string name="restart_name">Starta om Zeno</string>
+    <string name="restart_warn">Vill du starta om Zeno? Om Zeno inte är din standardstartsida kommer detta enbart stänga av appen.</string>
 
     <string name="default_launcher_title">Välj standardstartsida</string>
     <string name="default_launcher_warn">Efter du valt standardstartsida kommer du skickas till dess framsida. Vill du fortsätta? Om du inte ser valet "Alltid" som alltid trycker du på hemknappen på din mobil EFTER du valt startsida.</string>

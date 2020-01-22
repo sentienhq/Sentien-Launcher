@@ -103,7 +103,7 @@
     <string name="freeze_history_warn">Biztosan meg szeretnéd állítani az előzményeket? Az előzményeid mostantól változatlanok maradnak.</string>
 
     <string name="restart_name">Zeno újraindítása</string>
-    <string name="restart_warn">Biztosan újraindítod a Zeno indítót? Ha a Zeno nem az alapértelmezett indító, akkor a KISS egyszerűen leáll.</string>
+    <string name="restart_warn">Biztosan újraindítod a Zeno indítót? Ha a Zeno nem az alapértelmezett indító, akkor a Zeno egyszerűen leáll.</string>
 
     <string name="items_title">%d elem</string>
 

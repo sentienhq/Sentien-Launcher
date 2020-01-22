@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lanceur KISS</string>
-    <string name="activity_setting">Paramètres de KISS</string>
+    <string name="app_name">Lanceur Zeno</string>
+    <string name="activity_setting">Paramètres de Zeno</string>
     <string name="ui_search_hint">Rechercher des applications, contacts,…</string>
     <string name="ui_item_search">%1$s Rechercher « %2$s »</string>
     <string name="ui_item_phone">Appeler « %s »</string>
@@ -16,7 +16,7 @@
     <string name="ui_empty_2">Garder votre historique visible</string>
     <string name="ui_empty_2_sub">Pour un accès rapide</string>
     <string name="ui_empty_3">Accès rapide aux applis les plus utilisées</string>
-    <string name="ui_empty_3_sub">Le lanceur d\'application KISS apprend de vos habitudes</string>
+    <string name="ui_empty_3_sub">Le lanceur d\'application Zeno apprend de vos habitudes</string>
     <string name="contacts_name">Contacts</string>
     <string name="search_name">Sources pour la recherche web</string>
     <string name="settings_name">Paramètres du périphérique</string>
@@ -66,7 +66,7 @@
     <string name="history_onclick_name">Afficher l\'historique au toucher</string>
     <string name="enable_app">Afficher les applications récemment installés dans l\'historique</string>
     <string name="enable_phone">Afficher les appels entrants dans l\'historique</string>
-    <string name="reset_excluded_apps_name">Réinitialiser la liste des applications exclues de KISS</string>
+    <string name="reset_excluded_apps_name">Réinitialiser la liste des applications exclues de Zeno</string>
     <string name="reset_favorites_warn">Voulez-vous vraiment réinitialiser vos favoris ?</string>
     <string name="favorites_erased">Favoris effacés.</string>
     <string name="menu_favorites_add">Ajouter aux favoris</string>
@@ -79,8 +79,8 @@
     <string name="settings_tethering">Hotspot</string>
     <string name="icons_pack_default_name">Icones par défaut</string>
     <string name="icons_pack_name">Icônes (ADW.Launcher theme)</string>
-    <string name="restart_name">Redémarrer KISS</string>
-    <string name="ui_excluded_apps">Voir ou modifier les applications exclues de KISS</string>
+    <string name="restart_name">Redémarrer Zeno</string>
+    <string name="ui_excluded_apps">Voir ou modifier les applications exclues de Zeno</string>
     <string name="ui_excluded_apps_dialog_title">Sélectionnez les applis à exclure</string>
     <string name="ui_excluded_apps_not_found">Aucune application n’a été exclue</string>
     <string name="search_providers_title">Sélectionner les moteurs de recherche</string>
@@ -97,7 +97,7 @@
     <string name="exclude_favorites">Exclure les favoris de l’historique</string>
     <string name="favorites_hide">Masquer la barre des favoris</string>
     <string name="restart_desc">Corriger les problèmes de thème ou de non-affichage des nouveaux contacts</string>
-    <string name="restart_warn">Voulez-vous vraiment redémarrer KISS ? Si KISS n’est pas votre écran d\'accueil par défaut, l’application quittera simplement.</string>
+    <string name="restart_warn">Voulez-vous vraiment redémarrer Zeno ? Si Zeno n’est pas votre écran d\'accueil par défaut, l’application quittera simplement.</string>
     <string name="items_title">%d objets</string>
     <string name="alternate_history_inputs">Autres entrées de l’historique</string>
     <string name="keyboard_options">Options du clavier</string>
@@ -161,7 +161,7 @@
     <string name="history_favorites_summary">Réinitialiser vos favoris, enlever la barre des favoris…</string>
     <string name="title_wallpaper">Interactions du fond d\'écran dynamique</string>
     <string name="freeze_history_summary">Figer l\'historique tant que cette case est cochée</string>
-    <string name="enable_favorites_bar_summary_off">Seulement afficher les favoris lors de l\'appui sur l\'icône KISS</string>
+    <string name="enable_favorites_bar_summary_off">Seulement afficher les favoris lors de l\'appui sur l\'icône Zeno</string>
     <string name="enable_favorites_bar_summary_on">Afficher les favoris au dessus de la barre de recherche</string>
     <string name="get_help">Obtenir de l\'aide</string>
     <string name="permission_denied">La permission a été refusée</string>
@@ -173,16 +173,16 @@
     <string name="wp_animate_sides_desc">Le fond d\'écran sera collé au bord droit ou gauche après le défilement</string>
     <string name="colors">Couleurs</string>
     <string name="black_notification_icons">Afficher les icônes de notification en noir</string>
-    <string name="shortcuts_no_host_permission">KISS n\'est plus votre écran d\'accueil principal et ne peut donc pas accéder à vos raccourcis.</string>
-    <string name="unable_add_shortcut">Impossible d\'ajouter des raccourcis (le fournisseur de raccourcis est désactivé dans les paramètres de KISS)</string>
+    <string name="shortcuts_no_host_permission">Zeno n\'est plus votre écran d\'accueil principal et ne peut donc pas accéder à vos raccourcis.</string>
+    <string name="unable_add_shortcut">Impossible d\'ajouter des raccourcis (le fournisseur de raccourcis est désactivé dans les paramètres de Zeno)</string>
     <string name="screen_toggle_tags">Personnaliser le menu des étiquettes</string>
     <string name="pref_toggle_tags_select">Étiquettes à afficher dans le menu</string>
-    <string name="ctx_menu">Menu KISS</string>
+    <string name="ctx_menu">Menu Zeno</string>
     <string name="pref_tags_menu">Ajouter des étiquettes dans le menu</string>
     <string name="popup_tags_title">Étiquettes disponibles</string>
     <string name="popup_tags_actions">Actions disponibles</string>
     <string name="show_history">Afficher l\'historique</string>
-    <string name="unable_to_initialize_shortcuts">Impossible d’initialiser les raccourcis. KISS est-il votre lanceur par défaut \?</string>
+    <string name="unable_to_initialize_shortcuts">Impossible d’initialiser les raccourcis. Zeno est-il votre lanceur par défaut \?</string>
     <string name="pref_tags_menu_dismiss">Fermer le menu des étiquettes après sélection</string>
     <string name="show_untagged">Afficher non étiquetté</string>
     <string name="pref_show_untagged">Afficher action non étiquettée</string>
@@ -192,19 +192,19 @@
     <string name="ui_excluded_from_history_apps">Voir ou modifier les applications exclues de l\'historique</string>
     <string name="history_sort_name">Trier l\'historique</string>
     <string name="history_sort_desc">Trier l\'historique en ordre alphabétique</string>
-    <string name="excluded_app_history_added">Applications exclues de l\'historique. Réinitialisation via les paramètres de KISS</string>
-    <string name="menu_exclude_kiss">de KISS</string>
+    <string name="excluded_app_history_added">Applications exclues de l\'historique. Réinitialisation via les paramètres de Zeno</string>
+    <string name="menu_exclude_kiss">de Zeno</string>
     <string name="menu_exclude_history">de l\'historique</string>
-    <string name="pref_hide_circle">Cacher le cercle de KISS</string>
+    <string name="pref_hide_circle">Cacher le cercle de Zeno</string>
     <string name="pref_hide_circle_desc">La liste des applications sera toujours accessible</string>
     <string name="contacts_call_on_click">Cliquer pour appeler un contact</string>
     <string name="keyboard_suggestions">Activer les suggestions automatiques du clavier</string>
-    <string name="swap_kiss_button_with_menu">Afficher le bouton KISS sur la droite</string>
+    <string name="swap_kiss_button_with_menu">Afficher le bouton Zeno sur la droite</string>
     <string name="enable_gestures">Activer les gestures dans les zones vides</string>
     <string name="enable_gestures_desc">(↑ pour le clavier, ↓ pour les notifications)</string>
     <string name="notification_support">Afficher un rond sur les applis avec des notifications</string>
-    <string name="notification_dialog">Cochez KISS dans l\'écran suivant pour activer.</string>
-    <string name="cant_pin_shortcut">Impossible d\'ajouter le raccourci. KISS est-il bien votre lanceur par défaut \?</string>
+    <string name="notification_dialog">Cochez Zeno dans l\'écran suivant pour activer.</string>
+    <string name="cant_pin_shortcut">Impossible d\'ajouter le raccourci. Zeno est-il bien votre lanceur par défaut \?</string>
     <string name="search_results_options">Résultats de recherche</string>
     <string name="search_provider_toggle">Liens des sources de recherche web</string>
     <string name="copy_confirmation">Copié dans le presse-papier</string>
@@ -215,5 +215,5 @@
     <string name="pref_fav_tags_select">Étiquettes à afficher dans la barre des favoris</string>
     <string name="pref_fav_tags_drawable_desc">Désactivez pour utiliser moins de batterie pour de nombreuses étiquettes favorites</string>
     <string name="pref_fav_tags_drawable">Générer des icônes pour les étiquettes favorites</string>
-    <string name="cant_save_shortcuts">Impossible d\'ajouter les raccourcis. KISS est-il bien votre lanceur par défaut \?</string>
+    <string name="cant_save_shortcuts">Impossible d\'ajouter les raccourcis. Zeno est-il bien votre lanceur par défaut \?</string>
 </resources>

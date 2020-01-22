@@ -131,7 +131,7 @@
     <string name="removed_item">Removed</string>
     <string name="menu_remove">Remove from history</string>
     <string name="menu_exclude">Exclude app …</string>
-    <string name="menu_exclude_kiss">from KISS</string>
+    <string name="menu_exclude_kiss">from Zeno</string>
     <string name="menu_exclude_history">from history</string>
     <string name="menu_app_details">App info</string>
     <string name="menu_app_uninstall">Uninstall</string>
@@ -152,11 +152,11 @@
     <string name="pref_hide_navbar_desc">Hide navigation bar and turn on immersive mode</string>
     <string name="pref_hide_statusbar">Hide status bar</string>
     <string name="pref_hide_statusbar_desc">Hide notification bar and turn on immersive mode</string>
-    <string name="pref_hide_circle">Hide the KISS circle</string>
+    <string name="pref_hide_circle">Hide the Zeno circle</string>
     <string name="pref_hide_circle_desc">App list will still be accessible</string>
     <string name="restart_desc">Fix theme issues and new contacts not displaying</string>
-    <string name="restart_name">Restart KISS</string>
-    <string name="restart_warn">Do you really want to restart KISS? If KISS is not your default launcher the app will simply quit.</string>
+    <string name="restart_name">Restart Zeno</string>
+    <string name="restart_warn">Do you really want to restart Zeno? If Zeno is not your default launcher the app will simply quit.</string>
     <string name="default_launcher_title">Change Default Launcher</string>
     <string name="default_launcher_warn">After selecting the Default Launcher, you\'ll be sent to its home screen. Are you sure you\'d like to proceed?\n\nNote: If you don\'t see the \"Always\" option, press the \"Home\" button after selecting your desired launcher.</string>
     <string name="items_title" tools:ignore="PluralsCandidate">%d items</string>
@@ -183,7 +183,7 @@
     <string name="large_search_bar">Bigger search bar</string>
     <string name="rounded_list">Rounded list corners</string>
     <string name="rounded_bars">Rounded bar corners</string>
-    <string name="swap_kiss_button_with_menu">KISS button on the right</string>
+    <string name="swap_kiss_button_with_menu">Zeno button on the right</string>
     <!-- Widget strings, preference ID should not be translated -->
     <string name="menu_widget_add">(beta) Add widget</string>
     <string name="menu_widget_remove">Remove widget</string>
@@ -197,19 +197,19 @@
     <string name="history_favorites_summary">Reset your favorites, remove favorites bar, …</string>
     <string name="title_wallpaper">Live wallpaper interactions</string>
     <string name="freeze_history_summary">Keep history as-is until unchecked</string>
-    <string name="enable_favorites_bar_summary_off">Only display favorites when pressing the KISS icon</string>
+    <string name="enable_favorites_bar_summary_off">Only display favorites when pressing the Zeno icon</string>
     <string name="enable_favorites_bar_summary_on">Display favorites above the search bar</string>
     <string name="get_help">Get help</string>
     <string name="permission_denied">Permission has been denied</string>
     <string name="colors">Colors</string>
     <string name="black_notification_icons">Display notification icons in black</string>
-    <string name="shortcuts_no_host_permission">KISS is not your main launcher anymore and can\'t access your shortcuts.</string>
-    <string name="unable_add_shortcut">Unable to add shortcuts (shortcut provider is turned off in KISS settings)</string>
+    <string name="shortcuts_no_host_permission">Zeno is not your main launcher anymore and can\'t access your shortcuts.</string>
+    <string name="unable_add_shortcut">Unable to add shortcuts (shortcut provider is turned off in Zeno settings)</string>
     <!-- Strings from tags menu -->
     <string name="screen_toggle_tags">Customize tags menu</string>
     <string name="pref_toggle_tags_select">Tags to show in menu</string>
     <string name="pref_fav_tags_select">Tags to show in fav bar</string>
-    <string name="ctx_menu">KISS Menu</string>
+    <string name="ctx_menu">Zeno Menu</string>
     <string name="pref_tags_menu">Add tags in menu</string>
     <string name="pref_tags_menu_dismiss">Close tags menu after selection</string>
     <string name="popup_tags_title">Available tags</string>
@@ -217,14 +217,14 @@
     <string name="show_history">Show history</string>
     <string name="show_untagged">Show untagged</string>
     <string name="pref_show_untagged">Show untagged action</string>
-    <string name="unable_to_initialize_shortcuts">Unable to initialize shortcuts. Is KISS your default launcher?</string>
+    <string name="unable_to_initialize_shortcuts">Unable to initialize shortcuts. Is Zeno your default launcher?</string>
     <string name="enable_gestures">Enable gestures on empty areas</string>
     <string name="enable_gestures_desc">(↑ for keyboard, ↓ for notifications)</string>
     <string name="pref_fav_tags_drawable_desc">Turn off to use less memory for many fav tags</string>
     <string name="pref_fav_tags_drawable">Generate icons for fav tags</string>
     <string name="notification_support">Display a dot on apps with notifications</string>
-    <string name="notification_dialog">Check KISS in the following menu to turn it on.</string>
-    <string name="cant_pin_shortcut">Could not add shortcut. Is KISS your default launcher\?</string>
-    <string name="cant_save_shortcuts">Could not add shortcuts. Is KISS your default launcher\?</string>
+    <string name="notification_dialog">Check Zeno in the following menu to turn it on.</string>
+    <string name="cant_pin_shortcut">Could not add shortcut. Is Zeno your default launcher\?</string>
+    <string name="cant_save_shortcuts">Could not add shortcuts. Is Zeno your default launcher\?</string>
     <string name="copy_confirmation">Copied to clipboard</string>
 </resources>

@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
-    <string name="app_name">KISS paleidimo priemonė</string>
-    <string name="activity_setting">KISS nustatymai</string>
+    <string name="app_name">Zeno paleidimo priemonė</string>
+    <string name="activity_setting">Zeno nustatymai</string>
     <string name="ui_search_hint">Ieškoti programėlių, kontaktų, …</string>
     <string name="ui_item_search">Ieškoti %1$s for “%2$s”</string>
     <string name="ui_item_visit">Aplankykite “%1$s”</string>
@@ -21,7 +21,7 @@
     <string name="ui_empty_2">Visada rodyti istoriją</string>
     <string name="ui_empty_2_sub">Greitam pasiekimui</string>
     <string name="ui_empty_3">Greitai pasiekti dažniausiai naudojamas programėles</string>
-    <string name="ui_empty_3_sub">KISS paleidimo priemonė prisiderina prie Jūsų įpročių</string>
+    <string name="ui_empty_3_sub">Zeno paleidimo priemonė prisiderina prie Jūsų įpročių</string>
 
     <string name="contacts_name">Kontaktai</string>
 
@@ -35,7 +35,7 @@
     <string name="main_clear">Išvalyti paieškos laukelį</string>
     <string name="main_kiss">Rodyti mėgiamiausius ir programėlių sąrašą</string>
     <string name="main_kiss_back">Rodyti istoriją</string>
-    <string name="reset_name">Iš naujo nustatyti KISS istoriją</string>
+    <string name="reset_name">Iš naujo nustatyti Zeno istoriją</string>
     <string name="reset_excluded_apps_name">Iš naujo nustatyti neįtrauktų programėliųų sąrašą</string>
     <string name="reset_excluded_apps_warn">Ar Jūs tikrai norite iš naujo nustatyti neįtrauktų programėlių sąrašą?</string>
     <string name="ui_excluded_apps">Žiūrėti / redaguoti neįtrauktas programėles</string>
@@ -93,11 +93,11 @@
     <string name="tags_confirmation_added">Žyma buvo pridėta</string>
     <string name="tags_visible">Rodyti programėlių žymas</string>
     <string name="excluded_app_list_erased">Neįtrauktų programėlių sąrašas ištrintas.</string>
-    <string name="excluded_app_list_added">Programėlė neįtraukta į KISS. Nustatyti iš naujo per KISS nustatymus</string>
+    <string name="excluded_app_list_added">Programėlė neįtraukta į Zeno. Nustatyti iš naujo per Zeno nustatymus</string>
 
     <string name="removed_item">Pašalinta</string>
     <string name="menu_remove">Pašalinti iš istorijos</string>
-    <string name="menu_exclude">Neįtraukti programkėlės į KISS</string>
+    <string name="menu_exclude">Neįtraukti programkėlės į Zeno</string>
     <string name="menu_app_details">Programėlės informacija</string>
     <string name="menu_app_uninstall">Pašalinti</string>
     <string name="menu_app_hibernate">Užmigdyti</string>
@@ -118,8 +118,8 @@
     <string name="favorites_hide">Slėpti mėgiamisuiųjų skydelį</string>
 
     <string name="restart_desc">Sutvarkyti temos klaidas / nauji kontaktai nerodomi</string>
-    <string name="restart_name">Paleisti iš naujo KISS</string>
-    <string name="restart_warn">Ar tikrai norite iš naujo paleisti KISS? Jei KISS nėra Jūsų numatytoji paleidimo priemonė tai programėlė paprasčiausiai išsijungs.</string>
+    <string name="restart_name">Paleisti iš naujo Zeno</string>
+    <string name="restart_warn">Ar tikrai norite iš naujo paleisti Zeno? Jei Zeno nėra Jūsų numatytoji paleidimo priemonė tai programėlė paprasčiausiai išsijungs.</string>
 
     <string name="default_launcher_title">Pakeisti numatytąją paleidimo priemonę</string>
     <string name="default_launcher_warn">Po to kai pasirinksite numatytąją paleidimo priemonę, Jūs atsidursite namų ekrane. Ar Jūs įsitikinęs, kad norite pradėti?\n\nPastaba: jei nematote pasirinkimo „Visada\", paspauskite namų mygtuką po to kai pasirinksite numatytąją paleidimo priemonę.</string>

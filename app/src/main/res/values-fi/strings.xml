@@ -198,13 +198,13 @@
     <string name="history_sort_name">Lajittele historia</string>
     <string name="history_sort_desc">Lajittele historia aakkosjärjestyksessä</string>
     <string name="contacts_call_on_click">Klikkaa soittaaksesi yhteystiedoille</string>
-    <string name="swap_kiss_button_with_menu">KISS-painike oikealla</string>
+    <string name="swap_kiss_button_with_menu">Zeno-painike oikealla</string>
     <string name="enable_gestures">Ota eleet käyttöön tyhjillä alueilla</string>
     <string name="enable_gestures_desc">(↑ avataksesi näppäimistön, ↓ avataksesi ilmoitukset)</string>
     <string name="keyboard_suggestions">Ota käyttöön automaattinen täyttö/ehdotukset</string>
     <string name="notification_support">Näytä piste sovelluksissa, joilla on ilmoituksia</string>
-    <string name="notification_dialog">Valitse KISS seuraavassa valikossa ottaaksesi sen käyttöön.</string>
-    <string name="cant_pin_shortcut">Pikakuvaketta ei voitu lisätä. Onko KISS oletuskäynnistimesi\?</string>
+    <string name="notification_dialog">Valitse Zeno seuraavassa valikossa ottaaksesi sen käyttöön.</string>
+    <string name="cant_pin_shortcut">Pikakuvaketta ei voitu lisätä. Onko Zeno oletuskäynnistimesi\?</string>
     <string name="search_results_options">Hakutulokset</string>
     <string name="search_provider_toggle">Linkit verkkohakukoneisiin</string>
     <string name="copy_confirmation">Kopioitu leikepöydälle</string>
@@ -215,5 +215,5 @@
     <string name="pref_fav_tags_select">Suosikkipalkissa näytettävät tagit</string>
     <string name="pref_fav_tags_drawable_desc">Poista käytöstä käyttääksesi vähemmän muistia moneille suosikkitageille</string>
     <string name="pref_fav_tags_drawable">Generoi kuvakkeet suosikkitageille</string>
-    <string name="cant_save_shortcuts">Pikakuvaketta ei voitu lisätä. Onko KISS oletuskäynnistimesi\?</string>
+    <string name="cant_save_shortcuts">Pikakuvaketta ei voitu lisätä. Onko Zeno oletuskäynnistimesi\?</string>
 </resources>

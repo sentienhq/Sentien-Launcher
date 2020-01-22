@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools"><string name="activity_setting">KISS Параметри</string>
-    <string name="app_name">KISS Запускач</string>
+<resources xmlns:tools="http://schemas.android.com/tools"><string name="activity_setting">Zeno Параметри</string>
+    <string name="app_name">Zeno Запускач</string>
     <string name="ui_search_hint">Пошук застосунків, контактів, …</string>
     <string name="ui_item_search">Пошук %1$s для “%2$s”</string>
     <string name="ui_item_visit">Відвідайте “%1$s”</string>
@@ -36,7 +36,7 @@
     <string name="ui_empty_2">Завжди бачити свою історію</string>
     <string name="ui_empty_2_sub">Для швидкого доступу</string>
     <string name="ui_empty_3">Швидкий доступ до найбільш використовуваних додатків</string>
-    <string name="ui_empty_3_sub">KISS запускач дізнається з ваших звичок</string>
+    <string name="ui_empty_3_sub">Zeno запускач дізнається з ваших звичок</string>
 
     <string name="settings_name">Параметри пристрою</string>
 
@@ -126,9 +126,9 @@
     <string name="tags_confirmation_added">Теґ встановлено</string>
     <string name="tags_visible">Показати теґи додатків</string>
     <string name="excluded_app_list_erased">Список виключених програм стерто.</string>
-    <string name="excluded_app_list_added">"Програма виключена з KISS. Скинути через KISS  налаштування "</string>
+    <string name="excluded_app_list_added">"Програма виключена з Zeno. Скинути через Zeno  налаштування "</string>
 
-    <string name="menu_exclude">Виключити додаток з KISS</string>
+    <string name="menu_exclude">Виключити додаток з Zeno</string>
     <string name="menu_app_details">Інформація про додаток</string>
     <string name="menu_app_uninstall">Видалити</string>
     <string name="menu_app_hibernate">Сплячий режим</string>
@@ -151,8 +151,8 @@
     <string name="pref_hide_statusbar_desc">Приховати панель сповіщень та активувати режим занурення для KitKat (4.4) та вище</string>
 
     <string name="restart_desc">Виправлення тем та нових контактів, які не відображаються</string>
-    <string name="restart_name">Перезапустити KISS</string>
-    <string name="restart_warn">Ви дійсно хочете перезапустити KISS? Якщо KISS не є запускачем за замовчуванням, додаток просто завершить роботу.</string>
+    <string name="restart_name">Перезапустити Zeno</string>
+    <string name="restart_warn">Ви дійсно хочете перезапустити Zeno? Якщо Zeno не є запускачем за замовчуванням, додаток просто завершить роботу.</string>
 
     <string name="default_launcher_title">Змінити запускач за замовчуванням</string>
     <string name="default_launcher_warn">Вибравши Запускача за замовчуванням, ви будете відправлені на головний екран. Ви впевнені, що хочете продовжити?
@@ -187,7 +187,7 @@
     <string name="user_experience_summary">Мінімалістичний інтерфейс, налаштування клавіатури, …</string>
     <string name="history_favorites_summary">Скидання ваших уподобань, видалення панелі вподобань, …</string>
     <string name="freeze_history_summary">Залишити історію, як є, поки не буде помічено</string>
-    <string name="enable_favorites_bar_summary_off">Відображати тільки уподобання, коли натиснувши на KISS піктограму</string>
+    <string name="enable_favorites_bar_summary_off">Відображати тільки уподобання, коли натиснувши на Zeno піктограму</string>
     <string name="enable_favorites_bar_summary_on">Відобразити вибране над панеллю пошуку</string>
     <string name="get_help">Отримати допомогу!</string>
     </resources>
