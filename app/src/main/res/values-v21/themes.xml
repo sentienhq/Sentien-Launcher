@@ -15,7 +15,7 @@
 
     <style name="BaseThemeDark" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:colorPrimary">@color/kiss_green</item>
-        <item name="android:colorPrimaryDark">@color/kiss_green</item>
+        <item name="android:colorPrimaryDark">@android:color/black</item>
         <item name="android:colorAccent">@color/kiss_green</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="appSelectableItemBackground">?android:attr/selectableItemBackgroundBorderless

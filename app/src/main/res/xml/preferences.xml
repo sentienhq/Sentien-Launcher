@@ -45,7 +45,7 @@
                 android:key="enable-phone-history"
                 android:title="@string/enable_phone" />
             <com.sentienhq.zeno.preference.SwitchPreference
-                android:defaultValue="true"
+                android:defaultValue="false"
                 android:key="enable-app-history"
                 android:title="@string/enable_app" />
         </PreferenceCategory>
@@ -75,7 +75,7 @@
             android:key="reset"
             android:title="@string/reset_favorites_name" />
         <com.sentienhq.zeno.preference.SwitchPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="enable-favorites-bar"
             android:summaryOff="@string/enable_favorites_bar_summary_off"
             android:summaryOn="@string/enable_favorites_bar_summary_on"
@@ -94,7 +94,7 @@
         android:summary="@string/user_interface_summary"
         android:title="@string/title_ui">
         <ListPreference
-            android:defaultValue="transparent"
+            android:defaultValue="amoled-dark"
             android:entries="@array/themesEntries"
             android:entryValues="@array/themesValues"
             android:key="theme"
@@ -146,7 +146,7 @@
         android:title="@string/title_ux">
         <PreferenceCategory android:title="@string/keyboard_options">
             <com.sentienhq.zeno.preference.SwitchPreference
-                android:defaultValue="false"
+                android:defaultValue="true"
                 android:key="display-keyboard"
                 android:title="@string/keyboard_name" />
             <com.sentienhq.zeno.preference.SwitchPreference
@@ -154,29 +154,31 @@
                 android:key="enable-suggestions-keyboard"
                 android:title="@string/keyboard_suggestions" />
         </PreferenceCategory>
-        <PreferenceCategory android:title="@string/history_hide_name" android:key="history-hide-section">
+        <PreferenceCategory
+            android:key="history-hide-section"
+            android:title="@string/history_hide_name">
             <com.sentienhq.zeno.preference.SwitchPreference
-                android:defaultValue="false"
+                android:defaultValue="true"
                 android:key="history-hide"
                 android:summary="@string/history_hide_desc"
                 android:title="@string/history_hide_name" />
             <com.sentienhq.zeno.preference.SwitchPreference
-                android:defaultValue="false"
+                android:defaultValue="true"
                 android:dependency="history-hide"
                 android:key="history-onclick"
                 android:title="@string/history_onclick_name" />
             <com.sentienhq.zeno.preference.SwitchPreference
-                android:defaultValue="false"
+                android:defaultValue="true"
                 android:dependency="history-hide"
                 android:key="favorites-hide"
                 android:title="@string/favorites_hide" />
             <com.sentienhq.zeno.preference.SwitchPreference
-                android:defaultValue="false"
+                android:defaultValue="true"
                 android:key="pref-hide-navbar"
                 android:summary="@string/pref_hide_navbar_desc"
                 android:title="@string/pref_hide_navbar" />
             <com.sentienhq.zeno.preference.SwitchPreference
-                android:defaultValue="false"
+                android:defaultValue="true"
                 android:key="pref-hide-statusbar"
                 android:summary="@string/pref_hide_statusbar_desc"
                 android:title="@string/pref_hide_statusbar" />
@@ -303,11 +305,13 @@
                 android:title="@string/search_provider_reset" />
         </PreferenceCategory>
     </PreferenceScreen>
-    <PreferenceScreen android:title="@string/title_advanced" android:key="advanced">
+    <PreferenceScreen
+        android:key="advanced"
+        android:title="@string/title_advanced">
         <com.sentienhq.zeno.preference.NotificationPreference
             android:defaultValue="true"
-            android:key="enable-notifications"
             android:dialogMessage="@string/notification_dialog"
+            android:key="enable-notifications"
             android:title="@string/notification_support" />
         <com.sentienhq.zeno.preference.DefaultLauncherPreference
             android:dialogMessage="@string/default_launcher_warn"
