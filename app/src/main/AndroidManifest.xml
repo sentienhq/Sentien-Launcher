@@ -21,7 +21,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- Display notification drawer -->
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-    <!-- Ability to uninstall an app from KISS -->
+    <!-- Ability to uninstall an app from Zeno -->
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
 
     <uses-feature

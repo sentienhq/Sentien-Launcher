@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">KISS launcher</string>
-    <string name="activity_setting">Definições do KISS</string>
+    <string name="app_name">Zeno launcher</string>
+    <string name="activity_setting">Definições do Zeno</string>
     <string name="ui_search_hint">Procurar aplicações, contactos…</string>
     <string name="ui_item_search">Procurar %1$s por “%2$s”</string>
     <string name="ui_item_visit">Visitar “%1$s”</string>
@@ -18,7 +18,7 @@
     <string name="ui_empty_2">Mostrar sempre o histórico</string>
     <string name="ui_empty_2_sub">Para aceder rapidamente</string>
     <string name="ui_empty_3">Acesso rápido às aplicações mais usadas</string>
-    <string name="ui_empty_3_sub">O iniciador de aplicações KISS aprende com os seus hábitos</string>
+    <string name="ui_empty_3_sub">O iniciador de aplicações Zeno aprende com os seus hábitos</string>
     <string name="contacts_name">Contactos</string>
     <string name="search_name">Procurar na Internet</string>
     <string name="settings_name">Configurações do dispositivo</string>
@@ -28,9 +28,9 @@
     <string name="main_kiss">Mostrar lista de aplicações e favoritos</string>
     <string name="main_kiss_back">Mostrar histórico</string>
     <string name="reset_name">Limpar histórico</string>
-    <string name="reset_excluded_apps_name">Limpar lista de aplicações excluídas do KISS</string>
+    <string name="reset_excluded_apps_name">Limpar lista de aplicações excluídas do Zeno</string>
     <string name="reset_excluded_apps_warn">Quer mesmo limpar a sua lista de aplicações excluídas\?</string>
-    <string name="ui_excluded_apps">Ver ou editar aplicações excluídas do KISS</string>
+    <string name="ui_excluded_apps">Ver ou editar aplicações excluídas do Zeno</string>
     <string name="ui_excluded_apps_dialog_title">Desmarque as aplicações que gostaria de incluir</string>
     <string name="ui_excluded_apps_not_found">Nenhum aplicação foi excluída</string>
     <string name="reset_warn">Quer mesmo limpar o seu histórico\?</string>
@@ -83,7 +83,7 @@
     <string name="tags_confirmation_added">Etiquetas definidas</string>
     <string name="tags_visible">Mostrar etiquetas de aplicação</string>
     <string name="excluded_app_list_erased">A lista de aplicações excluídas foi apagada.</string>
-    <string name="excluded_app_list_added">Aplicação excluída do KISS. Limpe através das configurações do KISS</string>
+    <string name="excluded_app_list_added">Aplicação excluída do Zeno. Limpe através das configurações do KISS</string>
     <string name="removed_item">Removido</string>
     <string name="menu_remove">Remover do histórico</string>
     <string name="menu_exclude">Excluir aplicação...</string>
@@ -103,11 +103,11 @@
     <string name="exclude_favorites">Excluir favoritos do histórico</string>
     <string name="favorites_hide">Esconder barra de favoritos</string>
     <string name="restart_desc">Corrigir problemas no tema e novos contactos que não são mostrados</string>
-    <string name="restart_name">Reiniciar o KISS</string>
-    <string name="restart_warn">Quer mesmo reiniciar o KISS\? Caso não seja o iniciador padrão, irá sair apenas da aplicação.</string>
+    <string name="restart_name">Reiniciar o Zeno</string>
+    <string name="restart_warn">Quer mesmo reiniciar o Zeno\? Caso não seja o iniciador padrão, irá sair apenas da aplicação.</string>
     <string name="default_launcher_title">Alterar iniciador padrão</string>
-    <string name="default_launcher_warn">Após selecionar o iniciador padrão, será levado para o ecrã principal do mesmo. Tem a certeza que quer continuar\? 
-\n 
+    <string name="default_launcher_warn">Após selecionar o iniciador padrão, será levado para o ecrã principal do mesmo. Tem a certeza que quer continuar\?
+\n
 \nNota: se não vê a opção \"Sempre\", pressione o botão \"Início\" após escolher o iniciador.</string>
     <string name="items_title">%d itens</string>
     <string name="alternate_history_inputs">Alternar entradas do histórico</string>
@@ -166,7 +166,7 @@
     <string name="history_favorites_summary">Repor os favoritos, remover barra de favoritos…</string>
     <string name="title_wallpaper">Interações com imagem de fundo dinâmico</string>
     <string name="freeze_history_summary">Manter histórico como está até desmarcar</string>
-    <string name="enable_favorites_bar_summary_off">Apenas mostrar favoritos ao pressionar o ícone do KISS</string>
+    <string name="enable_favorites_bar_summary_off">Apenas mostrar favoritos ao pressionar o ícone do Zeno</string>
     <string name="enable_favorites_bar_summary_on">Mostrar favoritos acima da barra de pesquisa</string>
     <string name="get_help">Obter ajuda!</string>
     <string name="permission_denied">Permissão negada</string>

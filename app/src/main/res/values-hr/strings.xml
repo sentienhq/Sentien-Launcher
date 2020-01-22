@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
 
-    <string name="app_name">KISS launcher</string>
-    <string name="activity_setting">KISS postavke</string>
+    <string name="app_name">Zeno launcher</string>
+    <string name="activity_setting">Zeno postavke</string>
     <string name="ui_search_hint">Pretraži aplikacije, kontakte, …</string>
     <string name="ui_item_search">%1$s Potraži “%2$s”</string>
     <string name="ui_item_phone">Nazovi “%s”</string>
@@ -20,7 +20,7 @@
     <string name="ui_empty_2">Uvijek prikaži povIjest pretraživanja</string>
     <string name="ui_empty_2_sub">Za brži pristup</string>
     <string name="ui_empty_3">Brzi pristup do najkorištenijih aplikacija</string>
-    <string name="ui_empty_3_sub">KISS uči iz vaših navika</string>
+    <string name="ui_empty_3_sub">Zeno uči iz vaših navika</string>
 
     <string name="contacts_name">Kontakti</string>
 
@@ -101,7 +101,7 @@
     <string name="menu_favorites_add">Dodaj u favorite</string>
     <string name="portrait_title">Prisili uspravni prikaz</string>
     <string name="excluded_app_list_erased">Lista skrivenih aplikacija obrisana.</string>
-    <string name="excluded_app_list_added">Aplikacija skrivena. Vratite ju unutar KISS postavki</string>
+    <string name="excluded_app_list_added">Aplikacija skrivena. Vratite ju unutar Zeno postavki</string>
 
     <string name="menu_exclude">Sakrij aplikaciju</string>
     <string name="menu_shortcut_remove">Ukloni prečac</string>
@@ -117,8 +117,8 @@
     <string name="favorites_hide">Sakrij polje favorita</string>
 
     <string name="restart_desc">Popravi probleme teme / ne prikazivanje novih kontakata</string>
-    <string name="restart_name">Ponovo pokreni KISS</string>
-    <string name="restart_warn">Želite li ponovo pokrenuti KISS? Ako KISS nije vaš glavni pokretač aplikacija će se zatvoriti.</string>
+    <string name="restart_name">Ponovo pokreni Zeno</string>
+    <string name="restart_warn">Želite li ponovo pokrenuti Zeno? Ako Zeno nije vaš glavni pokretač aplikacija će se zatvoriti.</string>
 
     <string name="items_title">%d stavke</string>
     <string name="keyboard_options">Postavke tipkovnice</string>

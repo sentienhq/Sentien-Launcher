@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Llançador KISS</string>
+    <string name="app_name">Llançador Zeno</string>
     <string name="activity_setting">Configuració del KISS</string>
     <string name="ui_search_hint">Cerca aplis, contactes…</string>
     <string name="ui_item_search">Cerca «%2$s» a %1$s</string>

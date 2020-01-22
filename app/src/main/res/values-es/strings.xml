@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">KISS launcher</string>
-    <string name="activity_setting">Ajustes de KISS</string>
+    <string name="app_name">Zeno launcher</string>
+    <string name="activity_setting">Ajustes de Zeno</string>
     <string name="ui_search_hint">Buscar aplicaciones, contactos, …</string>
     <string name="ui_item_search">Buscar «%2$s» en %1$s</string>
     <string name="ui_item_phone">Llamar a %s</string>
@@ -16,7 +16,7 @@
     <string name="ui_empty_2">Ver el historial siempre</string>
     <string name="ui_empty_2_sub">Para acceder rápidamente</string>
     <string name="ui_empty_3">Acceso directo a las aplicaciones más usadas</string>
-    <string name="ui_empty_3_sub">KISS launcher aprende de tus hábitos</string>
+    <string name="ui_empty_3_sub">Zeno launcher aprende de tus hábitos</string>
     <string name="contacts_name">Contactos</string>
     <string name="search_name">Búsqueda en la web</string>
     <string name="settings_name">Ajustes del dispositivo</string>
@@ -26,7 +26,7 @@
     <string name="main_kiss">Mostrar lista de aplicaciones</string>
     <string name="main_kiss_back">Mostrar historial</string>
     <string name="reset_name">Restablecer el historial</string>
-    <string name="reset_excluded_apps_name">Restablecer apps excluidas de KISS</string>
+    <string name="reset_excluded_apps_name">Restablecer apps excluidas de Zeno</string>
     <string name="reset_excluded_apps_warn">¿Seguro que quieres reiniciar la lista de aplicaciones excluidas?</string>
     <string name="reset_warn">¿Seguro que quieres reiniciar el historial?</string>
     <string name="reset_favorites_name">Restablecer los favoritos</string>

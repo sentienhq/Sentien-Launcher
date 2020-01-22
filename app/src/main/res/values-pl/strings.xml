@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">KISS launcher</string>
-    <string name="activity_setting">Ustawienia KISS</string>
+    <string name="app_name">Zeno launcher</string>
+    <string name="activity_setting">Ustawienia Zeno</string>
     <string name="ui_search_hint">Wyszukaj aplikacje, kontakty, …</string>
     <string name="ui_item_search">Wyszukaj “%2$s” w %1$s</string>
     <string name="ui_item_phone">Połącz z “%s”</string>
@@ -19,7 +19,7 @@
     <string name="ui_empty_2">Zawsze wyświetlaj historię</string>
     <string name="ui_empty_2_sub">Dla szybkiego dostępu</string>
     <string name="ui_empty_3">Szybki dostęp do najczęściej używanych aplikacji</string>
-    <string name="ui_empty_3_sub">Launcher KISS uczy się Twoich nawyków</string>
+    <string name="ui_empty_3_sub">Launcher Zeno uczy się Twoich nawyków</string>
 
     <string name="contacts_name">Kontakty</string>
 
@@ -72,14 +72,14 @@
 
     <string name="shortcuts_name">Skróty</string>
 
-    <string name="reset_excluded_apps_name">Zresetuj listę odrzuconych aplikacji z KISS</string>
+    <string name="reset_excluded_apps_name">Zresetuj listę odrzuconych aplikacji z Zeno</string>
     <string name="reset_warn">Na pewno chcesz wyczyścić swoją historię?</string>
     <string name="reset_favorites_name">Wyczyść listę ulubionych</string>
     <string name="icons_hide_main">Ukryj ikony</string>
     <string name="icons_hide_desc">Przydatne na wolnych urządzeniach</string>
     <string name="favorites_erased">Ulubione wyczyszczone.</string>
     <string name="menu_favorites_add">Dodaj do ulubionych</string>
-    <string name="excluded_app_list_added">Aplikacja wykluczona z KISS. Zresetuj poprzez ustawienia KISS</string>
+    <string name="excluded_app_list_added">Aplikacja wykluczona z Zeno. Zresetuj poprzez ustawienia KISS</string>
 
     <string name="excluded_app_list_erased">Wyczyszczono listę wykluczonych aplikacji.</string>
     <string name="menu_exclude">Wyklucz aplikację...</string>
@@ -100,7 +100,7 @@
     <string name="reset_excluded_from_history_apps_name">Zresetuj listę odrzuconych aplikacji z historii</string>
     <string name="reset_excluded_from_history_apps_warn">Na pewno chcesz zresetować listę odrzuconych aplikacji z historii\?</string>
     <string name="settings_excluded_apps">Odrzucone aplikacje</string>
-    <string name="ui_excluded_apps">Wyświetl lub edytuj listę odrzuconych aplikacji z KISS</string>
+    <string name="ui_excluded_apps">Wyświetl lub edytuj listę odrzuconych aplikacji z Zeno</string>
     <string name="ui_excluded_from_history_apps">Wyświetl lub edytuj listę odrzuconych aplikacji z historii</string>
     <string name="ui_excluded_apps_dialog_title">Odznacz aplikacje które chciałbyś uwzględnić</string>
     <string name="ui_excluded_apps_not_found">Brak wykluczonych aplikacji</string>
@@ -143,7 +143,7 @@
     <string name="tags_add_title">Dodaj tagi oddzielone spacją</string>
     <string name="tags_confirmation_added">Tagi zostały ustawione</string>
     <string name="tags_visible">Pokaż tagi aplikacji</string>
-    <string name="excluded_app_history_added">Aplikacja wykluczona z historii. Zresetuj poprzez ustawienia KISS</string>
+    <string name="excluded_app_history_added">Aplikacja wykluczona z historii. Zresetuj poprzez ustawienia Zeno</string>
     <string name="menu_exclude_kiss">z KISS</string>
     <string name="menu_exclude_history">z historii</string>
     <string name="menu_shortcut_remove">Usuń skrót</string>

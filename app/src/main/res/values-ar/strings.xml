@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">KISS قاذفة</string>
-    <string name="activity_setting">إعدادات KISS</string>
+    <string name="app_name">Zeno قاذفة</string>
+    <string name="activity_setting">إعدادات Zeno</string>
     <string name="ui_search_hint">بحث التطبيقات، والاتصالات، …</string>
     <string name="ui_item_search">%1$s البحث عن \"%2$s\"</string>
     <string name="ui_item_phone">اتصال \"%s\"</string>
@@ -17,7 +17,7 @@
     <string name="ui_empty_2">نرى دائما تاريخكم</string>
     <string name="ui_empty_2_sub">للوصول السريع</string>
     <string name="ui_empty_3">الوصول السريع إلى التطبيقات الأكثر استخداما</string>
-    <string name="ui_empty_3_sub">KISS قاذفة يتعلم من عاداتك</string>
+    <string name="ui_empty_3_sub">Zeno قاذفة يتعلم من عاداتك</string>
     <string name="contacts_name">جهات الاتصال</string>
     <string name="search_name">محرك البحث على الويب</string>
     <string name="settings_name">إعدادات الجهاز</string>
@@ -61,7 +61,7 @@
     <string name="favorites_erased">المفضلة محوها.</string>
     <string name="menu_favorites_add">أضف الى المفضلة</string>
     <string name="excluded_app_list_erased">محت قائمة التطبيقات استبعادها.</string>
-    <string name="excluded_app_list_added">التطبيق استبعادها من قبلة. إعادة تعيين من خلال إعدادات KISS</string>
+    <string name="excluded_app_list_added">التطبيق استبعادها من قبلة. إعادة تعيين من خلال إعدادات Zeno</string>
     <string name="removed_item">إزالة</string>
     <string name="menu_remove">إزالة من التاريخ</string>
     <string name="menu_exclude">استبعاد التطبيق …</string>
@@ -79,7 +79,7 @@
     <string name="color_picker_default_title">اختيار لون</string>
     <string name="ui_item_visit">زر ”%1$s“</string>
     <string name="color_swatch_description">اللون %1$d</string>
-    <string name="ui_excluded_apps">عرض وتحرير التطبيقات المستبعدة من KISS</string>
+    <string name="ui_excluded_apps">عرض وتحرير التطبيقات المستبعدة من Zeno</string>
     <string name="ui_excluded_apps_dialog_title">حدد التطبيقات لإستبعادها</string>
     <string name="ui_excluded_apps_not_found">بدون تطبيقات مستبعدة</string>
     <string name="search_providers_title">حدد محركات البحث على الويب</string>
@@ -89,7 +89,7 @@
     <string name="icons_pack_default_name">أيقونات النظام</string>
     <string name="settings_tethering">الربط</string>
     <string name="restart_desc">إصلاح مشاكل السمة وعدم ظهور جهات الإتصال الجدد</string>
-    <string name="restart_name">أعد تشغيل KISS</string>
+    <string name="restart_name">أعد تشغيل Zeno</string>
     <string name="history_mode_name">نمط السجل</string>
     <string name="history_mode_desc">إختر طريقة ترتيب السجل</string>
     <string name="menu_shortcut_remove">أزل الإختصارات</string>
@@ -130,8 +130,8 @@
     <string name="reset_excluded_from_history_apps_warn">هل تريد إعادة تعيين قائمة التطبيقات المستبعدة من السجل؟</string>
     <string name="settings_excluded_apps">التطبيقات المستبعدة</string>
     <string name="ui_excluded_from_history_apps">عرض وتحرير التطبيقات المستبعدة من السجل</string>
-    <string name="excluded_app_history_added">أُستبعد التطبيق من السجل.إعادة التعيين من خلال إعدادات KISS</string>
-    <string name="menu_exclude_kiss">من KISS</string>
+    <string name="excluded_app_history_added">أُستبعد التطبيق من السجل.إعادة التعيين من خلال إعدادات Zeno</string>
+    <string name="menu_exclude_kiss">من Zeno</string>
     <string name="menu_exclude_history">من السجل</string>
     <string name="history_sort_name">فرز السجل</string>
     <string name="history_sort_desc">ترتيب مدخلات السجل أبحديا</string>

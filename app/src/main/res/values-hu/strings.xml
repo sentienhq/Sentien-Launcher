@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="app_name">KISS indító</string>
-    <string name="activity_setting">KISS beállításai</string>
+    <string name="app_name">Zeno indító</string>
+    <string name="activity_setting">Zeno beállításai</string>
     <string name="ui_search_hint">App-ok, névjegyek, beállítások keresése, …</string>
     <string name="ui_item_search">%1$s “%2$s” keresése</string>
     <string name="ui_item_phone">“%s” hívása</string>
@@ -18,7 +18,7 @@
     <string name="ui_empty_2">Mindig láthatod az előzményeidet</string>
     <string name="ui_empty_2_sub">Gyorsan elérhető</string>
     <string name="ui_empty_3">Gyors hozzáférés a gyakran használt app-okhoz</string>
-    <string name="ui_empty_3_sub">A KISS indító tanul a szokásaidból</string>
+    <string name="ui_empty_3_sub">A Zeno indító tanul a szokásaidból</string>
 
     <string name="contacts_name">Névjegyek</string>
 
@@ -30,7 +30,7 @@
     <string name="main_clear">Kereső szöveg törlése</string>
     <string name="main_kiss">Kedvencek és app lista megjelenítése</string>
     <string name="main_kiss_back">Előzmények megjelenítése</string>
-    <string name="reset_name">KISS előzmények törlése</string>
+    <string name="reset_name">Zeno előzmények törlése</string>
     <string name="keyboard_name">Billentyűzet mutatása induláskor</string>
 
     <string name="alias_phone">tárcsázás,hívás,telefon</string>
@@ -90,7 +90,7 @@
     <string name="excluded_app_list_erased">Az elrejtett alkalmazások listája törölve.</string>
     <string name="excluded_app_list_added">App elrejtve. Ismét megjeleníthető a beállításokon keresztül</string>
 
-    <string name="menu_exclude">App kizárása a KISSből</string>
+    <string name="menu_exclude">App kizárása a ZENOből</string>
     <string name="menu_phone_create">Névjegy létrehozása</string>
 
     <string name="toast_favorites_added">a(z) %s hozzáadva a kedvencekhez</string>
@@ -102,8 +102,8 @@
     <string name="freeze_history_name">Előzmények megállítása</string>
     <string name="freeze_history_warn">Biztosan meg szeretnéd állítani az előzményeket? Az előzményeid mostantól változatlanok maradnak.</string>
 
-    <string name="restart_name">KISS újraindítása</string>
-    <string name="restart_warn">Biztosan újraindítod a KISS indítót? Ha a KISS nem az alapértelmezett indító, akkor a KISS egyszerűen leáll.</string>
+    <string name="restart_name">Zeno újraindítása</string>
+    <string name="restart_warn">Biztosan újraindítod a Zeno indítót? Ha a Zeno nem az alapértelmezett indító, akkor a KISS egyszerűen leáll.</string>
 
     <string name="items_title">%d elem</string>
 
