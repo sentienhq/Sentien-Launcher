@@ -24,15 +24,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import com.android.colorpicker.ColorPickerSwatch.OnColorSelectedListener;
-
-import fr.neamar.kiss.R;
+import com.sentienhq.zeno.R;
 
 /**
  * A dialog which takes in as input an array of colors and creates a palette allowing the user to
  * select a specific color swatch, which invokes a listener.
  */
-public class ColorPickerDialog extends DialogFragment implements OnColorSelectedListener {
+public class ColorPickerDialog extends DialogFragment implements ColorPickerSwatch.OnColorSelectedListener {
 
     public static final int SIZE_LARGE = 1;
     public static final int SIZE_SMALL = 2;
@@ -48,7 +46,7 @@ public class ColorPickerDialog extends DialogFragment implements OnColorSelected
     private int mSelectedColor;
     private int mColumns;
     private int mSize;
-    private OnColorSelectedListener mListener;
+    private ColorPickerSwatch.OnColorSelectedListener mListener;
     private ColorPickerPalette mPalette;
     private ProgressBar mProgress;
 
@@ -76,7 +74,7 @@ public class ColorPickerDialog extends DialogFragment implements OnColorSelected
         setArguments(bundle);
     }
 
-    public void setOnColorSelectedListener(OnColorSelectedListener listener) {
+    public void setOnColorSelectedListener(ColorPickerSwatch.OnColorSelectedListener listener) {
         mListener = listener;
     }
 
@@ -123,9 +121,9 @@ public class ColorPickerDialog extends DialogFragment implements OnColorSelected
             mListener.onColorSelected(color);
         }
 
-        if (getTargetFragment() instanceof OnColorSelectedListener) {
-            final OnColorSelectedListener listener =
-                    (OnColorSelectedListener) getTargetFragment();
+        if (getTargetFragment() instanceof ColorPickerSwatch.OnColorSelectedListener) {
+            final ColorPickerSwatch.OnColorSelectedListener listener =
+                    (ColorPickerSwatch.OnColorSelectedListener) getTargetFragment();
             listener.onColorSelected(color);
         }
 

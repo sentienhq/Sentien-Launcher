@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="fr.neamar.kiss">
+    package="com.sentienhq.zeno">
 
     <permission
         android:name="com.android.launcher.permission.INSTALL_SHORTCUT"
@@ -38,7 +38,7 @@
         android:required="false" />
 
     <application
-        android:name=".KissApplication"
+        android:name="com.sentienhq.zeno.ZenoApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
@@ -54,13 +54,13 @@
             android:value="3.0" />
 
         <!--
-        clearTaskOnLaunch: when viewing kiss settings, display the main activity when pressing home https://github.com/Neamar/KISS/issues/117
+        clearTaskOnLaunch: when viewing zeno settings, display the main activity when pressing home https://github.com/Neamar/KISS/issues/117
         launchMode=singleTop: call onNewIntent() when pressing home again while already viewing main activity, also redisplay main activity when viewing full-screen contact from picture
         windowSoftInputMode: hide keyboard by default
         stateNotNeeded: rebuild the whole UI each time onResume() is called
         -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.sentienhq.zeno.MainActivity"
             android:clearTaskOnLaunch="true"
             android:excludeFromRecents="true"
             android:label="@string/app_name"
@@ -87,7 +87,7 @@
                 android:resource="@drawable/ic_launcher" />
         </activity>
         <activity
-            android:name=".DummyActivity"
+            android:name="com.sentienhq.zeno.DummyActivity"
             android:enabled="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -97,26 +97,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.sentienhq.zeno.SettingsActivity"
             android:label="@string/activity_setting"
             android:theme="@style/SettingTheme"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.sentienhq.zeno.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.sentienhq.zeno.MainActivity" />
         </activity>
         <activity
-            android:name=".kustomsupport.AutoFinishTransparentActivity"
+            android:name="com.sentienhq.zeno.kustomsupport.AutoFinishTransparentActivity"
             android:theme="@style/Theme.Transparent" />
 
         <provider
-            android:name=".kustomsupport.Kustom5SecsProvider"
+            android:name="com.sentienhq.zeno.kustomsupport.Kustom5SecsProvider"
             android:authorities="${applicationId}.kustomsupport.kustom5secsprovider"
             android:exported="true"
             android:grantUriPermissions="true" />
 
         <receiver
-            android:name=".broadcast.LocaleChangedReceiver"
+            android:name="com.sentienhq.zeno.broadcast.LocaleChangedReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -126,19 +126,19 @@
 
         <!-- On incoming calls, add user to history -->
         <receiver
-            android:name=".broadcast.IncomingCallHandler"
+            android:name="com.sentienhq.zeno.broadcast.IncomingCallHandler"
             android:enabled="false">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
         </receiver>
 
-        <service android:name=".dataprovider.AppProvider" />
-        <service android:name=".dataprovider.ContactsProvider" />
-        <service android:name=".dataprovider.SettingsProvider" />
-        <service android:name=".dataprovider.ShortcutsProvider" />
+        <service android:name="com.sentienhq.zeno.dataprovider.AppProvider" />
+        <service android:name="com.sentienhq.zeno.dataprovider.ContactsProvider" />
+        <service android:name="com.sentienhq.zeno.dataprovider.SettingsProvider" />
+        <service android:name="com.sentienhq.zeno.dataprovider.ShortcutsProvider" />
 
-        <service android:name=".notification.NotificationListener"
+        <service android:name="com.sentienhq.zeno.notification.NotificationListener"
             android:enabled="@bool/notification_service_enabled"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter>
