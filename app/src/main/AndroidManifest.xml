@@ -23,6 +23,8 @@
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
     <!-- Ability to uninstall an app from Zeno -->
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <!--To run voice recognition for search-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <uses-feature
         android:name="android.hardware.telephony"

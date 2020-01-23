@@ -37,6 +37,7 @@ import androidx.annotation.NonNull;
 import com.sentienhq.zeno.adapter.RecordAdapter;
 import com.sentienhq.zeno.broadcast.IncomingCallHandler;
 import com.sentienhq.zeno.forwarder.ForwarderManager;
+import com.sentienhq.zeno.forwarder.Permission;
 import com.sentienhq.zeno.result.Result;
 import com.sentienhq.zeno.searcher.ApplicationsSearcher;
 import com.sentienhq.zeno.searcher.HistorySearcher;
@@ -74,6 +75,11 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
      * Store user preferences
      */
     public SharedPreferences prefs;
+
+    /**
+     * Voice control audio recognizer
+     */
+    public AudioRecognizer audioRecognizer;
 
     /**
      * Receive events from providers
@@ -174,6 +180,11 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
          */
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
+        /*
+         * Initialize Audio Recognizer
+         */
+        audioRecognizer = new AudioRecognizer(this);
 
         /*
          * Initialize all forwarders
@@ -315,6 +326,14 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
         searchEditText.setOnEditorActionListener(new OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == 3) {
+                    // Skip if we don't have permission to list contacts yet:(
+                    if (Permission.checkAudioPermission(getApplicationContext())) {
+                        audioRecognizer.startListening();
+                    } else {
+                        Permission.askAudioPermission();
+                    }
+                }
                 if (actionId == android.R.id.closeButton) {
                     systemUiVisibilityHelper.onKeyboardVisibilityChanged(false);
                     if (mPopup != null) {

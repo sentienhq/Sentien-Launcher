@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -20,6 +21,7 @@ import com.sentienhq.zeno.R;
 
 public class Permission extends Forwarder {
     private static final int PERMISSION_READ_CONTACTS = 0;
+    private static final int PERMISSION_RECORD_AUDIO = 0;
     private static final int PERMISSION_CALL_PHONE = 1;
 
     // Static weak reference to the main activity, this is sadly required
@@ -66,6 +68,19 @@ public class Permission extends Forwarder {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && mainActivity != null) {
             mainActivity.requestPermissions(new String[]{android.Manifest.permission.READ_CONTACTS},
                     Permission.PERMISSION_READ_CONTACTS);
+        }
+    }
+
+    public static boolean checkAudioPermission(Context context) {
+        return Build.VERSION.SDK_INT < Build.VERSION_CODES.M || context.checkSelfPermission(Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED;
+    }
+
+    public static void askAudioPermission() {
+        // If we don't have permission to audio recording, ask for it.
+        MainActivity mainActivity = Permission.currentMainActivity.get();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && mainActivity != null) {
+            mainActivity.requestPermissions(new String[]{android.Manifest.permission.RECORD_AUDIO},
+                    Permission.PERMISSION_RECORD_AUDIO);
         }
     }
 
