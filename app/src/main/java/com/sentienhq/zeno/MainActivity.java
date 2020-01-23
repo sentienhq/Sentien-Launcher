@@ -326,8 +326,9 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
         searchEditText.setOnEditorActionListener(new OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == 3) {
-                    // Skip if we don't have permission to list contacts yet:(
+                // check if pressed search on keyboard + empty search field ...
+                if (actionId == 3 && searchEditText.getText().toString().isEmpty()) {
+                    // Skip if we don't have permission to list audio yet:(
                     if (Permission.checkAudioPermission(getApplicationContext())) {
                         audioRecognizer.startListening();
                     } else {
