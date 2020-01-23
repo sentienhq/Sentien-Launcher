@@ -263,7 +263,7 @@ public class SettingsActivity extends PreferenceActivity implements
             // So, when null, we know it's the first time opening this setting and we can write the default value.
             // note: other preferences are initialized automatically in MainActivity.onCreate() from the preferences XML,
             // but this preference isn't defined in the XML so can't be initialized that easily.
-            prefs.edit().putStringSet("selected-search-provider-names", new TreeSet<>(Collections.singletonList("Google"))).apply();
+            prefs.edit().putStringSet("selected-search-provider-names", new TreeSet<>(Collections.singletonList("DuckDuckGo"))).apply();
         }
 
         removeSearchProviderSelect();
@@ -381,7 +381,7 @@ public class SettingsActivity extends PreferenceActivity implements
         ListPreference standardPref = new ListPreference(this);
 
         // Get selected providers to choose from
-        Set<String> selectedProviders = new TreeSet<>(prefs.getStringSet("selected-search-provider-names", new TreeSet<>(Collections.singletonList("Google"))));
+        Set<String> selectedProviders = new TreeSet<>(prefs.getStringSet("selected-search-provider-names", new TreeSet<>(Collections.singletonList("DuckDuckGo"))));
         String[] selectedProviderArray = new String[selectedProviders.size()];
         int pos = 0;
         //get names of search providers
@@ -395,7 +395,7 @@ public class SettingsActivity extends PreferenceActivity implements
         standardPref.setKey("default-search-provider");
         standardPref.setEntries(selectedProviderArray);
         standardPref.setEntryValues(selectedProviderArray);
-        standardPref.setDefaultValue("Google"); // Google is standard on install
+        standardPref.setDefaultValue("DuckDuckGo"); // DuckDuckGo is standard on install
 
         PreferenceGroup category = (PreferenceGroup) findPreference("providers");
         category.addPreference(standardPref);
