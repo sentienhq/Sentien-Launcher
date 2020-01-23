@@ -13,10 +13,8 @@ import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
 
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -24,9 +22,22 @@ import java.util.ArrayList;
 public class AudioRecognizer {
 
     private Context context;
+    Intent audioIntent;
+    SpeechRecognizer mSpeechRecognizer;
+    SpeechRecognitionListener listener;
 
     AudioRecognizer(Context context) {
         this.context = context;
+        Log.i("RESULT", "Runnable ran");
+
+        audioIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        audioIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        audioIntent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE,
+                context.getPackageName());
+
+        mSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(context);
+        listener = new SpeechRecognitionListener(context);
     }
 
     void startListening() {
@@ -43,18 +54,8 @@ public class AudioRecognizer {
         Runnable myRunnable = new Runnable() {
             @Override
             public void run() {
-                Log.i("RESULT", "Runnable ran");
-
-                Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
-                        RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-                intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE,
-                        context.getPackageName());
-
-                SpeechRecognizer mSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(context);
-                SpeechRecognitionListener listener = new SpeechRecognitionListener(context);
                 mSpeechRecognizer.setRecognitionListener(listener);
-                mSpeechRecognizer.startListening(intent);
+                mSpeechRecognizer.startListening(audioIntent);
             }
         };
         mainHandler.post(myRunnable);
