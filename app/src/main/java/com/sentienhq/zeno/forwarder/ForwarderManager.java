@@ -43,7 +43,6 @@ public class ForwarderManager extends Forwarder {
         experienceTweaks.onCreate();
         shortcutsForwarder.onCreate();
         tagsMenu.onCreate();
-
     }
 
     public void onStart() {

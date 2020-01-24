@@ -12,6 +12,7 @@ import android.content.SharedPreferences;
 import android.database.DataSetObserver;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -47,7 +48,6 @@ import com.sentienhq.zeno.searcher.Searcher;
 import com.sentienhq.zeno.searcher.TagsSearcher;
 import com.sentienhq.zeno.searcher.UntaggedSearcher;
 import com.sentienhq.zeno.ui.AnimatedListView;
-import com.sentienhq.zeno.ui.BottomPullEffectView;
 import com.sentienhq.zeno.ui.KeyboardScrollHider;
 import com.sentienhq.zeno.ui.ListPopup;
 import com.sentienhq.zeno.ui.SearchEditText;
@@ -164,6 +164,8 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
     private PopupWindow mPopup;
 
     private ForwarderManager forwarderManager;
+
+    private boolean isVoiceCommand = false;
 
     /**
      * Called when the activity is first created.
@@ -330,6 +332,7 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
                 if (actionId == 3 && searchEditText.getText().toString().isEmpty()) {
                     // Skip if we don't have permission to list audio yet:(
                     if (Permission.checkAudioPermission(getApplicationContext())) {
+                        isVoiceCommand = true;
                         audioRecognizer.startListening();
                     } else {
                         Permission.askAudioPermission();
@@ -493,6 +496,7 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
 
     @Override
     public boolean onKeyDown(int keycode, @NonNull KeyEvent e) {
+        isVoiceCommand = false;
         if (keycode == KeyEvent.KEYCODE_MENU) {
             // For devices with a physical menu button, we still want to display *our* contextual menu
             menuButton.showContextMenu();
@@ -745,7 +749,24 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
         if (query.isEmpty()) {
             systemUiVisibilityHelper.resetScroll();
         } else {
-            runTask(new QuerySearcher(this, query));
+            if (isVoiceCommand) {
+                String[] words = query.split(" ", 2);
+                if (words.length > 1 && words[0].equals("open")) {
+                    query = words[1];
+                    runTask(new QuerySearcher(this, query));
+
+                    final Handler handler = new Handler();
+                    handler.postDelayed(() -> {
+                        RecordAdapter adapter = ((RecordAdapter) list.getAdapter());
+                        adapter.onClick(adapter.getCount() - 1, searchEditText);
+                    }, 300);
+
+
+                }
+            } else {
+                runTask(new QuerySearcher(this, query));
+            }
+
         }
     }
 

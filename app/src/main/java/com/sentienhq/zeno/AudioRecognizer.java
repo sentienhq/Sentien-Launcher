@@ -28,14 +28,11 @@ public class AudioRecognizer {
 
     AudioRecognizer(Context context) {
         this.context = context;
-        Log.i("RESULT", "Runnable ran");
-
         audioIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         audioIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
                 RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         audioIntent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE,
                 context.getPackageName());
-
         mSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(context);
         listener = new SpeechRecognitionListener(context);
     }
@@ -48,7 +45,6 @@ public class AudioRecognizer {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Log.i("RESULT", "You can speak now");
 
         Handler mainHandler = new Handler(Looper.getMainLooper());
         Runnable myRunnable = new Runnable() {
