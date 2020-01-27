@@ -754,7 +754,6 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
                 if (words.length > 1 && words[0].equals("open")) {
                     query = words[1];
                     runTask(new QuerySearcher(this, query));
-
                     final Handler handler = new Handler();
                     handler.postDelayed(() -> {
                         RecordAdapter adapter = ((RecordAdapter) list.getAdapter());
@@ -763,10 +762,9 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
 
 
                 }
-            } else {
-                runTask(new QuerySearcher(this, query));
             }
-
+            runTask(new QuerySearcher(this, query));
+            isVoiceCommand = false;
         }
     }
 
