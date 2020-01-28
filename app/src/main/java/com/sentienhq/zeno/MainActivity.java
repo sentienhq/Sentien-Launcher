@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.database.DataSetObserver;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -166,6 +167,10 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
     private ForwarderManager forwarderManager;
 
     private boolean isVoiceCommand = false;
+
+    // here only for voice command purposes
+    private Integer triggerAction = 0;
+    private String globalQuery = "";
 
     /**
      * Called when the activity is first created.
@@ -332,6 +337,7 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
                 if (actionId == 3 && searchEditText.getText().toString().isEmpty()) {
                     // Skip if we don't have permission to list audio yet:(
                     if (Permission.checkAudioPermission(getApplicationContext())) {
+                        displayLoader(true);
                         isVoiceCommand = true;
                         audioRecognizer.startListening();
                     } else {
@@ -750,20 +756,15 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
             systemUiVisibilityHelper.resetScroll();
         } else {
             if (isVoiceCommand) {
-                String[] words = query.split(" ", 2);
-                if (words.length > 1 && words[0].equals("open")) {
-                    query = words[1];
-                    runTask(new QuerySearcher(this, query));
-                    final Handler handler = new Handler();
-                    handler.postDelayed(() -> {
-                        RecordAdapter adapter = ((RecordAdapter) list.getAdapter());
-                        adapter.onClick(adapter.getCount() - 1, searchEditText);
-                    }, 300);
-
-
+                ArrayList<String> result = AudioCommand.parse(query);
+                if (Integer.parseInt(result.get(0)) != 0) {
+                    triggerAction = Integer.parseInt(result.get(0));
+                    query = result.get(1);
+                    globalQuery = query;
                 }
             }
             runTask(new QuerySearcher(this, query));
+            displayLoader(false);
             isVoiceCommand = false;
         }
     }
@@ -874,6 +875,46 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
     @Override
     public void afterListChange() {
         list.animateChange();
+        if (triggerAction != 0) {
+            RecordAdapter adapter = ((RecordAdapter) list.getAdapter());
+
+            //adapter.onClick(adapter.getCount() - 1, searchEditText);
+
+            switch(triggerAction) {
+                case 1:
+                    // open the first result
+                    Result res = (Result) adapter.getItem(adapter.getCount() - 1);
+                    if (res != null && res.getPojoId().contains("app://")) {
+                        adapter.onClick(adapter.getCount() - 1, searchEditText);
+                    }
+                    break;
+                case 2:
+                    // call the first result
+                    Log.i("RESULT", "CALL" + globalQuery);
+                    break;
+                case 3:
+                    // message the first result
+                    Log.i("RESULT", "MSG" + globalQuery);
+                    break;
+                case 4:
+                    // navigate to location
+                    Log.i("RESULT", "LOCATION" + globalQuery);
+                    Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                    Uri.parse("http://maps.google.com/maps?daddr=" + globalQuery));
+                    startActivity(intent);
+                    break;
+                case 5:
+                    // search online
+                    res = (Result) adapter.getItem(0);
+                    if (res != null && res.getPojoId().contains("search://")) {
+                        adapter.onClick(0, searchEditText);
+                    }
+                    break;
+
+            }
+            globalQuery = "";
+            triggerAction = 0;
+        }
     }
 
     public void dismissPopup() {

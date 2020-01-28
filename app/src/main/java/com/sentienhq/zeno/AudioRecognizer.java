@@ -15,7 +15,6 @@ import android.speech.SpeechRecognizer;
 import android.util.Log;
 import android.widget.TextView;
 
-
 import java.util.ArrayList;
 
 
@@ -115,6 +114,45 @@ class SpeechRecognitionListener implements RecognitionListener {
 
     @Override
     public void onRmsChanged(float rmsdB) {
+    }
+}
+
+//Poors man audio recognition
+class AudioCommand {
+
+    private static String[][] commands={{"open ", "start ", "begin ", "launch ", "initiate ", "begin with "},
+            {"call ", "dial ", "i want to speak with ", "call out a ", "call a ", "call me ", "call to ", "dial me "},
+            {"message ", "text ", "message to ", "text to ", "write to ", "write ", "text message "},
+            {"navigate ", "navigate me to ", "navigate to ", "guide to ", "find way to ", "find way ", "find on map ", "route ", "route to ", "way to ", "show the way ", "show the way to ", "show me the way to ", "drive ", "drive to ", "go to "},
+            {"search ", "find ", "google ", "search for ", "find me ", "i am lookig for ", "find me online ", "search on the internet " , "find me the "}};
+
+    public static ArrayList<String> parse(String query) {
+
+        ArrayList<String> result = new ArrayList<String>();
+
+        int phraseSize = 0;
+        int tempResult = 0;
+        String tempPhrase = "";
+
+        for (int i = 0; i < commands.length; i ++) {
+            if (tempResult != 0) {
+                result.add(String.valueOf(tempResult));
+                result.add(tempPhrase);
+                return result;
+            } else {
+                for (String phrase : commands[i]) {
+                    if (query.contains(phrase) && phrase.split(" ").length > phraseSize) {
+                        phraseSize = phrase.split(" ").length;
+                        tempResult = i + 1;
+                        tempPhrase = query.split(phrase, 2)[1];
+                    }
+                }
+            }
+        }
+
+        result.add(String.valueOf(tempResult));
+        result.add(tempPhrase);
+        return result;
     }
 }
 
