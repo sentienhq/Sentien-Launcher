@@ -118,7 +118,7 @@ public class ContactsResult extends Result {
             phoneButton.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    launchCall(v.getContext());
+                    launchCall(v.getContext(), contactPojo.phone);
                 }
             });
 
@@ -126,7 +126,7 @@ public class ContactsResult extends Result {
 
                 @Override
                 public void onClick(View v) {
-                    launchMessaging(v.getContext());
+                    launchMessaging(v.getContext(), contactPojo.phone);
                 }
             });
 
@@ -249,7 +249,7 @@ public class ContactsResult extends Result {
         boolean callContactOnClick = settingPrefs.getBoolean("call-contact-on-click", false);
 
         if (callContactOnClick) {
-            launchCall(v.getContext());
+            launchCall(v.getContext(), contactPojo.phone);
         } else {
             launchContactView(context, v);
         }
@@ -257,8 +257,8 @@ public class ContactsResult extends Result {
 
     }
 
-    private void launchMessaging(final Context context) {
-        String url = "sms:" + Uri.encode(contactPojo.phone);
+    public void launchMessaging(final Context context, final String phone) {
+        String url = "sms:" + Uri.encode(phone);
         Intent i = new Intent(Intent.ACTION_SENDTO, Uri.parse(url));
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(i);
@@ -275,9 +275,9 @@ public class ContactsResult extends Result {
     }
 
     @SuppressLint("MissingPermission")
-    private void launchCall(final Context context) {
+    public void launchCall(final Context context, final String phone) {
         // Create the intent to start a phone call
-        String url = "tel:" + Uri.encode(contactPojo.phone);
+        String url = "tel:" + Uri.encode(phone);
         Intent phoneIntent = new Intent(Intent.ACTION_CALL, Uri.parse(url));
         phoneIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 

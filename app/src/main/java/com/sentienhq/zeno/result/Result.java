@@ -84,6 +84,11 @@ public abstract class Result {
         return pojo.id;
     }
 
+    @NonNull
+    public Pojo getPojo() {
+        return pojo;
+    }
+
     @Override
     public String toString() {
         return pojo.getName();

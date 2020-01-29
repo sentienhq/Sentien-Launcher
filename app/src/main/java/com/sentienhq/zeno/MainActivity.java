@@ -40,6 +40,9 @@ import com.sentienhq.zeno.adapter.RecordAdapter;
 import com.sentienhq.zeno.broadcast.IncomingCallHandler;
 import com.sentienhq.zeno.forwarder.ForwarderManager;
 import com.sentienhq.zeno.forwarder.Permission;
+import com.sentienhq.zeno.pojo.ContactsPojo;
+import com.sentienhq.zeno.pojo.Pojo;
+import com.sentienhq.zeno.result.ContactsResult;
 import com.sentienhq.zeno.result.Result;
 import com.sentienhq.zeno.searcher.ApplicationsSearcher;
 import com.sentienhq.zeno.searcher.HistorySearcher;
@@ -875,39 +878,65 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
     @Override
     public void afterListChange() {
         list.animateChange();
+
+        // trigger only with voice commands
         if (triggerAction != 0) {
             RecordAdapter adapter = ((RecordAdapter) list.getAdapter());
-
-            //adapter.onClick(adapter.getCount() - 1, searchEditText);
-
             switch(triggerAction) {
                 case 1:
-                    // open the first result
+                    // open the first APP result
                     Result res = (Result) adapter.getItem(adapter.getCount() - 1);
-                    if (res != null && res.getPojoId().contains("app://")) {
-                        adapter.onClick(adapter.getCount() - 1, searchEditText);
+                    if (res != null && (res.getPojoId().contains("app://") || res.getPojoId().contains("contact://"))) {
+                        res.launch(this, searchEditText);
                     }
                     break;
                 case 2:
-                    // call the first result
-                    Log.i("RESULT", "CALL" + globalQuery);
+                    // call the first matching result type CONTACT
+                    int i = adapter.getCount();
+                    boolean found = false;
+                    while(i > 0 && !found) {
+                        res = (Result) adapter.getItem(i - 1);
+                        if (res != null && res.getPojoId().contains("contact://")) {
+                            //adapter.onClick(i - 1, searchEditText);
+                            ContactsPojo pojo = (ContactsPojo) res.getPojo();
+                            if (pojo.phone != null) {
+                                found = true;
+                                ContactsResult resExec = (ContactsResult) res;
+                                resExec.launchCall(this, pojo.phone);
+                            }
+                        }
+                        i--;
+                    }
                     break;
                 case 3:
                     // message the first result
-                    Log.i("RESULT", "MSG" + globalQuery);
+                    i = adapter.getCount();
+                    found = false;
+                    while(i > 0 && !found) {
+                        res = (Result) adapter.getItem(i-1);
+                        if (res != null && res.getPojoId().contains("contact://")) {
+                            //adapter.onClick(i - 1, searchEditText);
+                            ContactsPojo pojo = (ContactsPojo) res.getPojo();
+                            if (pojo.phone != null) {
+                                found = true;
+                                ContactsResult resExec = (ContactsResult) res;
+                                resExec.launchMessaging(this, pojo.phone);
+                            }
+                        }
+                        i--;
+                    }
                     break;
                 case 4:
-                    // navigate to location
-                    Log.i("RESULT", "LOCATION" + globalQuery);
+                    // navigate to location // or string provided
                     Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
                     Uri.parse("http://maps.google.com/maps?daddr=" + globalQuery));
                     startActivity(intent);
                     break;
                 case 5:
-                    // search online
+                    // search online the term
                     res = (Result) adapter.getItem(0);
                     if (res != null && res.getPojoId().contains("search://")) {
-                        adapter.onClick(0, searchEditText);
+                        res.launch(this, searchEditText);
                     }
                     break;
 

@@ -42,7 +42,7 @@ public class AudioRecognizer {
             Ringtone r = RingtoneManager.getRingtone(context, notification);
             r.play();
         } catch (Exception e) {
-            e.printStackTrace();
+            throw e; // New in Java 8
         }
 
         Handler mainHandler = new Handler(Looper.getMainLooper());
@@ -120,11 +120,11 @@ class SpeechRecognitionListener implements RecognitionListener {
 //Poors man audio recognition
 class AudioCommand {
 
-    private static String[][] commands={{"open ", "start ", "begin ", "launch ", "initiate ", "begin with "},
-            {"call ", "dial ", "i want to speak with ", "call out a ", "call a ", "call me ", "call to ", "dial me "},
-            {"message ", "text ", "message to ", "text to ", "write to ", "write ", "text message "},
-            {"navigate ", "navigate me to ", "navigate to ", "guide to ", "find way to ", "find way ", "find on map ", "route ", "route to ", "way to ", "show the way ", "show the way to ", "show me the way to ", "drive ", "drive to ", "go to "},
-            {"search ", "find ", "google ", "search for ", "find me ", "i am lookig for ", "find me online ", "search on the internet " , "find me the "}};
+    private static String[][] commands={{"open", "start", "begin", "launch", "initiate", "begin with"},
+            {"call", "dial", "i want to speak with", "call out a", "call a", "call me", "call to", "dial me"},
+            {"message", "text", "message to", "text to", "write to", "write", "text message", "send message to", "write message to"},
+            {"navigate", "navigate me to", "navigate to", "guide to", "find way to", "find way", "find on map", "route", "route to", "way to", "show the way", "show the way to", "show me the way to", "drive me to", "drive to", "go to"},
+            {"search", "find", "google", "search for", "find me", "i am lookig for", "find me online", "search on the internet" , "find me the"}};
 
     public static ArrayList<String> parse(String query) {
 
@@ -141,10 +141,13 @@ class AudioCommand {
                 return result;
             } else {
                 for (String phrase : commands[i]) {
-                    if (query.contains(phrase) && phrase.split(" ").length > phraseSize) {
-                        phraseSize = phrase.split(" ").length;
-                        tempResult = i + 1;
-                        tempPhrase = query.split(phrase, 2)[1];
+                    if (query.contains(phrase + " ") && phrase.split(" ").length > phraseSize) {
+                        String[] splitted = query.split(phrase + " ", 2);
+                        if (splitted.length > 1) {
+                            phraseSize = phrase.split(" ").length;
+                            tempResult = i + 1;
+                            tempPhrase = query.split(phrase + " ", 2)[1];
+                        }
                     }
                 }
             }
