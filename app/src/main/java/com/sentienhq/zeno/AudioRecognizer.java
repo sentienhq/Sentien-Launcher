@@ -14,6 +14,7 @@ import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -87,7 +88,20 @@ class SpeechRecognitionListener implements RecognitionListener {
     public void onError(int error) {
         MainActivity activity = ((MainActivity) context);
         activity.displayLoader(false);
-        Log.i("RESULT", "onError: " + error);
+        String issue;
+        switch (error) { // todo move strings from code to resource files and translations.
+            case 6: issue = "No speech input"; break;
+            case 4 : issue = "Server sends error status"; break;
+            case 8 : issue = "RecognitionService busy."; break;
+            case 7 : issue = "No recognition result matched."; break;
+            case 1 : issue = "Network operation timed out."; break;
+            case 2 : issue = "Other network related errors."; break;
+            case 9 : issue = "Insufficient permissions"; break;
+            case 5 : issue = " Other client side errors."; break;
+            case 3 : issue = "Audio recording error."; break;
+            default: issue = "Unknown error!"; break;
+        }
+        Toast.makeText(this.context, issue, Toast.LENGTH_LONG).show();
     }
 
     @Override

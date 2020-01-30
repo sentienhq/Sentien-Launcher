@@ -81,5 +81,6 @@
 
     <style name="SettingsActionBar" parent="@android:style/Widget.Material.Light.ActionBar.Solid">
         <item name="android:displayOptions">homeAsUp|showTitle</item>
+        <item name="android:background">@android:color/black</item>
     </style>
 </resources>
