@@ -357,9 +357,11 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
                     hider.fixScroll();
                     return false;
                 }
-                RecordAdapter adapter = ((RecordAdapter) list.getAdapter());
-
-                adapter.onClick(adapter.getCount() - 1, v);
+                // open first entry only if the search is not empty => ergo you searched something before
+                if (!searchEditText.getText().toString().isEmpty()) {
+                    RecordAdapter adapter = ((RecordAdapter) list.getAdapter());
+                    adapter.onClick(adapter.getCount() - 1, v);
+                }
 
                 return true;
             }
@@ -927,7 +929,7 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
                     }
                     break;
                 case 4:
-                    // navigate to location // or string provided
+                    // navigate to location // or string provided // TODO change from google map service
                     Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
                     Uri.parse("http://maps.google.com/maps?daddr=" + globalQuery));
                     startActivity(intent);

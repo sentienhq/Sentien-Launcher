@@ -85,6 +85,8 @@ class SpeechRecognitionListener implements RecognitionListener {
 
     @Override
     public void onError(int error) {
+        MainActivity activity = ((MainActivity) context);
+        activity.displayLoader(false);
         Log.i("RESULT", "onError: " + error);
     }
 
@@ -105,11 +107,13 @@ class SpeechRecognitionListener implements RecognitionListener {
     @Override
     public void onResults(Bundle results) {
         ArrayList<String> matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-        Log.i("RESULT", String.valueOf(results));
-        String note = matches.get(0);
-        Log.i("RESULT_FIRST", note);
-        TextView searchEditText = ((Activity) context).findViewById(R.id.searchEditText);
-        searchEditText.setText(note);
+        String result = null;
+        if (matches != null && matches.get(0) != null) {
+            result = matches.get(0);
+            TextView searchEditText = ((Activity) context).findViewById(R.id.searchEditText);
+            searchEditText.setText(result);
+        }
+
     }
 
     @Override
