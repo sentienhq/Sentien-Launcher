@@ -13,12 +13,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId 'com.sentienhq.launcher'
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 163
         versionName "3.11.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
