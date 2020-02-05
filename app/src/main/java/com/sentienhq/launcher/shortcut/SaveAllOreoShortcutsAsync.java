@@ -108,7 +108,7 @@ public class SaveAllOreoShortcutsAsync extends AsyncTask<Void, Integer, Boolean>
     @Override
     protected void onPostExecute(@NonNull Boolean success) {
         if (success) {
-            Log.i(TAG, "Shortcuts added to KISS");
+            Log.i(TAG, "Shortcuts added to Sentien Launcher");
 
             if (this.dataHandler.get().getShortcutsProvider() != null) {
                 this.dataHandler.get().getShortcutsProvider().reload();

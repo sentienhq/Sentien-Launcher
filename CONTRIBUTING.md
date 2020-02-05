@@ -1,7 +1,7 @@
-# Contributing to Zeno
+# Contributing to Sentien Launcher
 Contributions are very welcome, feel free to open new issues or PR. Before continue, please take a look at former KISS launcher repo. 
 
-Zeno Launcher Project maintainers @good-lly
+Sentien Launcher Project maintainers @good-lly
 
 KISS Launcher Project maintainers are @Neamar, @Dorvaryn, @saveman71 and @Pluggi.
 
@@ -11,7 +11,7 @@ Want to help with the translation? Use https://hosted.weblate.org/projects/kiss/
 
 ## How does it work?
 
-Different data types can be aggregated via Zeno' simple interface: apps, contacts, settings...
+Different data types can be aggregated via Sentien' simple interface: apps, contacts, settings...
 
 Each data types uses four classes:
 

@@ -1,6 +1,6 @@
 # QA test suite
 This document contains a small QA suite that can be run after big changes to the app.
-As best as possible, only actual Zeno code is tested, not standard Android system behavior.
+As best as possible, only actual Sentien code is tested, not standard Android system behavior.
 
 > This document assumes all settings are at their default value when you start
 
@@ -12,8 +12,8 @@ As best as possible, only actual Zeno code is tested, not standard Android syste
 * [ ] Searching for text displays results
 * [ ] Clicking the launcher icon displays the list of apps
 * [ ] When clicking on a search item, the corresponding intent is triggered
-* [ ] When going back to Zeno, search results have been cleared
-* [ ] When going back to Zeno, the item has been added to history
+* [ ] When going back to Sentien, search results have been cleared
+* [ ] When going back to Sentien, the item has been added to history
 * [ ] History is displayed when search box is empty
 * [ ] Three dots menu is displayed to the right
 * [ ] Entering a search query replaces the three-dots menu with an "X"
@@ -21,16 +21,16 @@ As best as possible, only actual Zeno code is tested, not standard Android syste
 * [ ] When searching, pressing enter on the keyboard launches the first result
 * [ ] When keyboard is displayed, scrolling the list down hides the keyboard
 * [ ] When searching, pressing space as the first character does nothing (left-hand side trimming)
-* [ ] Press Zeno icon. App list is displayed, and Zeno bar appears with a circular reveal animation
-* [ ] Press Zeno icon again. App list is hidden, and Zeno bar disappears with a circular (un)reveal animation
-* [ ] With keyboard open, press Zeno icon. App list is displayed, and keyboard stays there
-* [ ] With keyboard open, press Zeno icon. The app list is displayed. When typing something on the keyboard, app list is hidden, and search results start appearing
-* [ ] Search for something, press Zeno icon. The app list is displayed. Press Zeno icon again, search query has been emptied
-* [ ] With Zeno set as default launcher, pressing home empties the search field and displays history
-* [ ] With Zeno set as default launcher and app list displayed, pressing home hides the app list and displays history
+* [ ] Press Sentien icon. App list is displayed, and Sentien bar appears with a circular reveal animation
+* [ ] Press Sentien icon again. App list is hidden, and Sentien bar disappears with a circular (un)reveal animation
+* [ ] With keyboard open, press Sentien icon. App list is displayed, and keyboard stays there
+* [ ] With keyboard open, press Sentien icon. The app list is displayed. When typing something on the keyboard, app list is hidden, and search results start appearing
+* [ ] Search for something, press Sentien icon. The app list is displayed. Press Sentien icon again, search query has been emptied
+* [ ] With Sentien set as default launcher, pressing home empties the search field and displays history
+* [ ] With Sentien set as default launcher and app list displayed, pressing home hides the app list and displays history
 * [ ] When app bar is displayed, pressing back hides the bar and displays history
 * [ ] When search results are displayed, pressing back empties then search field and displays history
-* [ ] When history is displayed, pressing back does not quit Zeno
+* [ ] When history is displayed, pressing back does not quit Sentien
 * [ ] When searching for something, touching the edit text moves the cursor
 
 #### Menus
@@ -66,16 +66,16 @@ As best as possible, only actual Zeno code is tested, not standard Android syste
 ### Favorites
 * [ ] Favorite bar is displayed automatically at startup
 * [ ] Clicking on a favorite trigger the correct Intent
-* [ ] When going back to Zeno, the favorite has been added to history
+* [ ] When going back to Sentien, the favorite has been added to history
 * [ ] Long-clicking favorite displays the menu
 * [ ] Long-click menu can be used to remove the favorite
 * [ ] Empty favorites are not displayed (favorites takes all available space in the bar)
 * [ ] When entering a search query, favorite bar is hidden
 * [ ] When search query is removed, bar appears again
 * [ ] When coming back from an application launched through search, bar is displayed again
-* [ ] When Zeno bar is opened, favorites bar is hidden
-* [ ] When Zeno bar is opened, internal favorites bar is hidden
-* [ ] When Zeno bar is opened, you can't click on the menu button behind the Zeno bar (not even visible, doesn't respond to touch events either)
+* [ ] When Sentien bar is opened, favorites bar is hidden
+* [ ] When Sentien bar is opened, internal favorites bar is hidden
+* [ ] When Sentien bar is opened, you can't click on the menu button behind the Sentien bar (not even visible, doesn't respond to touch events either)
 * [ ] When searching and pressing home, query is cleared, and favorites are displayed
 * [ ] When adding a favorite, it appears automatically, and favorites are evenly spaced
 * [ ] When removing a favorite, it disappears automatically, and favorites are evenly spaced
@@ -90,7 +90,7 @@ As best as possible, only actual Zeno code is tested, not standard Android syste
 * [ ] When search query is removed, favorite bar is hidden
 * [ ] When searching and pressing home, favorite bar is hidden
 * [ ] When coming back from an application launched through search, favorite bar is hidden
-* [ ] When Zeno bar is opened, favorites are displayed
+* [ ] When Sentien bar is opened, favorites are displayed
 
 #### When using the internal favorite bar
 * [ ] In settings, Favorites settings, disable "Show favorites above search bar", disable Minimalistic mode and Minimalistic mode for favorites
@@ -98,10 +98,10 @@ As best as possible, only actual Zeno code is tested, not standard Android syste
 * [ ] When entering a search query, external favorite bar is hidden
 * [ ] When search query is removed, external favorite bar is still hidden
 * [ ] When coming back from an application launched through search, external favorite bar is hidden
-* [ ] When Zeno bar is opened, favorites are visible in the Zeno bar
-* [ ] When Zeno bar is opened, favorites can be clicked
-* [ ] When Zeno bar is opened, favorites can be long-clicked
-* [ ] When Zeno bar is opened, favorites' context menu can be interacted with
+* [ ] When Sentien bar is opened, favorites are visible in the Sentien bar
+* [ ] When Sentien bar is opened, favorites can be clicked
+* [ ] When Sentien bar is opened, favorites can be long-clicked
+* [ ] When Sentien bar is opened, favorites' context menu can be interacted with
 
 #### When using the external favorite bar, with transparent favorite bar
 * [ ] In settings, Favorites settings, enable "Show favorites above search bar". In UI, enable "Transparent favorite bar"
@@ -121,7 +121,7 @@ As best as possible, only actual Zeno code is tested, not standard Android syste
 * [ ] Picking a theme in the settings updates the main screen theme
 * [ ] Loader circle is properly tinted according to the primary color
 * [ ] Launcher icon is properly tinted according to the primary color
-* [ ] Zeno bar background is properly tinted according to the primary color
+* [ ] Sentien bar background is properly tinted according to the primary color
 * [ ] Notification bar is of the selected color on the main screen theme
 
 #### Icons pack
@@ -131,7 +131,7 @@ As best as possible, only actual Zeno code is tested, not standard Android syste
 * [ ] Transparent search bar is displayed transparent
 * [ ] Large search bar is... large
 * [ ] When using large search bar and internal favorites bar, favorites are scaled appropriately
-* [ ] When using large search bar and internal favorites bar, Zeno bar is scaled appropriately (same height as search field)
+* [ ] When using large search bar and internal favorites bar, Sentien bar is scaled appropriately (same height as search field)
 
 ### UX
 #### Keyboard
@@ -215,7 +215,7 @@ As best as possible, only actual Zeno code is tested, not standard Android syste
 ### Advanced settings
 * [ ] Change default launcher option opens system dialog to pick a launcher
 * [ ] TODO: root mode
-* [ ] "Restart Zeno" option closes the settings and reopen Zeno
+* [ ] "Restart Sentien" option closes the settings and reopen Sentien
 
 ### Misc
 * [ ] Rate the app settings appears if history has more than 300 items
