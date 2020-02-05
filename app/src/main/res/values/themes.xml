@@ -62,7 +62,7 @@
         <item name="textShadowRadius">0</item>
     </style>
 
-    <style name="AppThemeZeno" parent="BaseThemeDark">
+    <style name="AppThemeSentien" parent="BaseThemeDark">
         <item name="android:windowShowWallpaper">false</item>
         <item name="android:windowBackground">@android:color/black</item>
         <item name="android:textColor">@color/kiss_text_on_dark</item>

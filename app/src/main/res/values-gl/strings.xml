@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Zeno launcher</string>
-    <string name="activity_setting">Axustes de Zeno</string>
+    <string name="app_name">Sentien Launcher</string>
+    <string name="activity_setting">Axustes de Sentien Launcher</string>
     <string name="ui_search_hint">Buscar aplicativos, contactos, …</string>
     <string name="ui_item_search">%1$s Buscar \"%2$s\"</string>
     <string name="ui_item_phone">Chamar a \"%s\"</string>
@@ -19,7 +19,7 @@
     <string name="ui_empty_2">Mostrar sempre o historial</string>
     <string name="ui_empty_2_sub">Para acceder rápidamente</string>
     <string name="ui_empty_3">Acceso directo ós aplicativos máis utilizados</string>
-    <string name="ui_empty_3_sub">Zeno launcher aprende dos teus hábitos</string>
+    <string name="ui_empty_3_sub">Sentien Launcher aprende dos teus hábitos</string>
 
     <string name="contacts_name">Contactos</string>
 

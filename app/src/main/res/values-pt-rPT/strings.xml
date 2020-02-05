@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Zeno launcher</string>
-    <string name="activity_setting">Definições do Zeno</string>
+    <string name="app_name">Sentien Launcher</string>
+    <string name="activity_setting">Definições do Sentien Launcher</string>
     <string name="ui_search_hint">Procurar aplicações, contactos…</string>
     <string name="ui_item_search">Procurar %1$s por “%2$s”</string>
     <string name="ui_item_visit">Visitar “%1$s”</string>
@@ -18,7 +18,7 @@
     <string name="ui_empty_2">Mostrar sempre o histórico</string>
     <string name="ui_empty_2_sub">Para aceder rapidamente</string>
     <string name="ui_empty_3">Acesso rápido às aplicações mais usadas</string>
-    <string name="ui_empty_3_sub">O iniciador de aplicações Zeno aprende com os seus hábitos</string>
+    <string name="ui_empty_3_sub">O iniciador de aplicações Sentien Launcher aprende com os seus hábitos</string>
     <string name="contacts_name">Contactos</string>
     <string name="search_name">Procurar na Internet</string>
     <string name="settings_name">Configurações do dispositivo</string>
@@ -28,9 +28,9 @@
     <string name="main_kiss">Mostrar lista de aplicações e favoritos</string>
     <string name="main_kiss_back">Mostrar histórico</string>
     <string name="reset_name">Limpar histórico</string>
-    <string name="reset_excluded_apps_name">Limpar lista de aplicações excluídas do Zeno</string>
+    <string name="reset_excluded_apps_name">Limpar lista de aplicações excluídas do Sentien Launcher</string>
     <string name="reset_excluded_apps_warn">Quer mesmo limpar a sua lista de aplicações excluídas\?</string>
-    <string name="ui_excluded_apps">Ver ou editar aplicações excluídas do Zeno</string>
+    <string name="ui_excluded_apps">Ver ou editar aplicações excluídas do Sentien Launcher</string>
     <string name="ui_excluded_apps_dialog_title">Desmarque as aplicações que gostaria de incluir</string>
     <string name="ui_excluded_apps_not_found">Nenhum aplicação foi excluída</string>
     <string name="reset_warn">Quer mesmo limpar o seu histórico\?</string>
@@ -83,7 +83,7 @@
     <string name="tags_confirmation_added">Etiquetas definidas</string>
     <string name="tags_visible">Mostrar etiquetas de aplicação</string>
     <string name="excluded_app_list_erased">A lista de aplicações excluídas foi apagada.</string>
-    <string name="excluded_app_list_added">Aplicação excluída do Zeno. Limpe através das configurações do Zeno</string>
+    <string name="excluded_app_list_added">Aplicação excluída do Sentien Launcher. Limpe através das configurações do Sentien Launcher</string>
     <string name="removed_item">Removido</string>
     <string name="menu_remove">Remover do histórico</string>
     <string name="menu_exclude">Excluir aplicação...</string>
@@ -103,8 +103,8 @@
     <string name="exclude_favorites">Excluir favoritos do histórico</string>
     <string name="favorites_hide">Esconder barra de favoritos</string>
     <string name="restart_desc">Corrigir problemas no tema e novos contactos que não são mostrados</string>
-    <string name="restart_name">Reiniciar o Zeno</string>
-    <string name="restart_warn">Quer mesmo reiniciar o Zeno\? Caso não seja o iniciador padrão, irá sair apenas da aplicação.</string>
+    <string name="restart_name">Reiniciar o Sentien Launcher</string>
+    <string name="restart_warn">Quer mesmo reiniciar o Sentien Launcher\? Caso não seja o iniciador padrão, irá sair apenas da aplicação.</string>
     <string name="default_launcher_title">Alterar iniciador padrão</string>
     <string name="default_launcher_warn">Após selecionar o iniciador padrão, será levado para o ecrã principal do mesmo. Tem a certeza que quer continuar\?
 \n
@@ -166,17 +166,17 @@
     <string name="history_favorites_summary">Repor os favoritos, remover barra de favoritos…</string>
     <string name="title_wallpaper">Interações com imagem de fundo dinâmico</string>
     <string name="freeze_history_summary">Manter histórico como está até desmarcar</string>
-    <string name="enable_favorites_bar_summary_off">Apenas mostrar favoritos ao pressionar o ícone do Zeno</string>
+    <string name="enable_favorites_bar_summary_off">Apenas mostrar favoritos ao pressionar o ícone do Sentien Launcher</string>
     <string name="enable_favorites_bar_summary_on">Mostrar favoritos acima da barra de pesquisa</string>
     <string name="get_help">Obter ajuda!</string>
     <string name="permission_denied">Permissão negada</string>
     <string name="colors">Cores</string>
     <string name="black_notification_icons">Mostrar ícones das notificações em preto</string>
     <string name="shortcuts_no_host_permission">O KiSS já não é o iniciador principal e não consegue aceder aos seus atalhos.</string>
-    <string name="unable_add_shortcut">Não é possível adicionar atalhos (o fornecedor de atalhos está desativado nas definições do Zeno)</string>
+    <string name="unable_add_shortcut">Não é possível adicionar atalhos (o fornecedor de atalhos está desativado nas definições do Sentien Launcher)</string>
     <string name="screen_toggle_tags">Personalizar menu de etiquetas</string>
     <string name="pref_toggle_tags_select">Etiquetas a mostrar no menu</string>
-    <string name="ctx_menu">Menu Zeno</string>
+    <string name="ctx_menu">Menu Sentien Launcher</string>
     <string name="pref_tags_menu">Adicionar etiquetas no menu</string>
     <string name="popup_tags_title">Etiquetas disponíveis</string>
     <string name="popup_tags_actions">Ações disponíveis</string>
@@ -188,17 +188,17 @@
     <string name="wp_animate_sides">Lado a colar a imagem de fundo</string>
     <string name="history_sort_name">Ordenar histórico</string>
     <string name="history_sort_desc">Ordenar entradas alfabeticamente</string>
-    <string name="excluded_app_history_added">App excluída do histórico. Limpe através das configurações do Zeno</string>
-    <string name="menu_exclude_kiss">do Zeno</string>
+    <string name="excluded_app_history_added">App excluída do histórico. Limpe através das configurações do Sentien Launcher</string>
+    <string name="menu_exclude_kiss">do Sentien Launcher</string>
     <string name="menu_exclude_history">do histórico</string>
-    <string name="pref_hide_circle">Ocultar o círculo Zeno</string>
+    <string name="pref_hide_circle">Ocultar o círculo Sentien Launcher</string>
     <string name="pref_hide_circle_desc">A lista das aplicações continuará acessível</string>
     <string name="pref_tags_menu_dismiss">Fechar menu das etiquetas após selecionar</string>
     <string name="show_untagged">Mostrar sem etiquetas</string>
     <string name="pref_show_untagged">Ação de mostrar sem etiquetas</string>
-    <string name="unable_to_initialize_shortcuts">Não foi possível inicializar os atalhos. O Zeno é o seu iniciador padrão\?</string>
+    <string name="unable_to_initialize_shortcuts">Não foi possível inicializar os atalhos. O Sentien Launcher é o seu iniciador padrão\?</string>
     <string name="contacts_call_on_click">Clicar para telefonar aos contactos</string>
-    <string name="swap_kiss_button_with_menu">Botão Zeno à direita</string>
+    <string name="swap_kiss_button_with_menu">Botão Sentien Launcher à direita</string>
     <string name="enable_gestures">Ativar gestos em áreas vazias</string>
     <string name="enable_gestures_desc">(↑ para teclado, ↓ para notificações)</string>
     <string name="keyboard_suggestions">Ativar sugestões/preenchimento automático</string>

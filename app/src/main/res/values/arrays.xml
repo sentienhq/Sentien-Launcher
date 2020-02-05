@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="themesEntries">
-        <item>Zeno dark theme</item>
+        <item>Sentien Launcher dark theme</item>
         <item>Light theme</item>
         <item>Semi-transparent theme</item>
         <item>Transparent theme</item>
@@ -11,7 +11,7 @@
         <item>AMOLED dark theme</item>
     </string-array>
     <string-array name="themesValues" translatable="false">
-        <item>zeno-dark</item>
+        <item>sentien-dark</item>
         <item>light</item>
         <item>semi-transparent</item>
         <item>transparent</item>

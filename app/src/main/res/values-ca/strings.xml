@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Llançador Zeno</string>
-    <string name="activity_setting">Configuració del Zeno</string>
+    <string name="app_name">Llançador Sentien Launcher</string>
+    <string name="activity_setting">Configuració del Sentien Launcher</string>
     <string name="ui_search_hint">Cerca aplis, contactes…</string>
     <string name="ui_item_search">Cerca «%2$s» a %1$s</string>
     <string name="ui_item_phone">Truca «%s»</string>
@@ -16,7 +16,7 @@
     <string name="ui_empty_2">Sempre podeu veure l’historial</string>
     <string name="ui_empty_2_sub">Per a accedir més ràpidament</string>
     <string name="ui_empty_3">Accés ràpid a les aplicacions més emprades</string>
-    <string name="ui_empty_3_sub">L’iniciador Zeno aprèn dels vostres hàbits</string>
+    <string name="ui_empty_3_sub">L’iniciador Sentien Launcher aprèn dels vostres hàbits</string>
     <string name="contacts_name">Contactes</string>
     <string name="search_name">Proveïdors de cerca al web</string>
     <string name="settings_name">Paràmetres del dispositiu</string>
@@ -52,9 +52,9 @@
     <string name="color_swatch_description_selected">S’ha seleccionat el color %1$d</string>
     <string name="shortcuts_name">Dreceres</string>
     <string name="reset_warn">Realment voleu reinicialitzar el vostre historial\?</string>
-    <string name="reset_excluded_apps_name">Reinicialitza la llista d’aplis excloses del Zeno</string>
+    <string name="reset_excluded_apps_name">Reinicialitza la llista d’aplis excloses del Sentien Launcher</string>
     <string name="reset_excluded_apps_warn">Realment voleu reinicialitzar la llista d’aplicacions excloses\?</string>
-    <string name="ui_excluded_apps">Visualitza o edita aplicacions excloses del Zeno</string>
+    <string name="ui_excluded_apps">Visualitza o edita aplicacions excloses del Sentien Launcher</string>
     <string name="ui_excluded_apps_dialog_title">Seleccioneu aplicacions a excloure</string>
     <string name="ui_excluded_apps_not_found">No s’ha exclòs cap aplicació</string>
     <string name="ui_item_visit">Visita «%1$s»</string>
@@ -70,8 +70,8 @@
     <string name="menu_favorites_add">Afegeix als preferits</string>
     <string name="icons_pack_default_name">Icones del sistema</string>
     <string name="items_title" tools:ignore="PluralsCandidate">%d elements</string>
-    <string name="restart_name">Reinicia el Zeno</string>
-    <string name="restart_warn">Realment voleu reiniciar el Zeno\? Si el Zeno no és l’iniciador per defecte, l’aplicació simplement es tancarà.</string>
+    <string name="restart_name">Reinicia el Sentien Launcher</string>
+    <string name="restart_warn">Realment voleu reiniciar el Sentien Launcher\? Si el Sentien Launcher no és l’iniciador per defecte, l’aplicació simplement es tancarà.</string>
     <string name="enable_favorites_bar">Mostra els preferits sobre la barra de cerca</string>
     <string name="favorites_hide">Amaga la barra de preferits</string>
     <string name="settings_storage">Emmagatzematge</string>
@@ -92,10 +92,10 @@
     <string name="title_ux">Experiència d’usuari</string>
     <string name="colors">Colors</string>
     <string name="pref_toggle_tags_select">Etiquetes a mostrar al menú</string>
-    <string name="ctx_menu">Menú del Zeno</string>
+    <string name="ctx_menu">Menú del Sentien Launcher</string>
     <string name="popup_tags_title">Etiquetes disponibles</string>
     <string name="popup_tags_actions">Accions disponibles</string>
-    <string name="pref_hide_circle">Amaga el cercle del Zeno</string>
+    <string name="pref_hide_circle">Amaga el cercle del Sentien Launcher</string>
     <string name="enable_gestures_desc">(↑ per al teclat, ↓ per a notificacions)</string>
     <string name="search_results_options">Resultats de la cerca</string>
     <string name="copy_confirmation">S’ha copiat al porta-retalls</string>

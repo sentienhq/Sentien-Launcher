@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Zeno ランチャー</string>
-    <string name="activity_setting">Zeno 設定</string>
+    <string name="app_name">Sentien Launcher ランチャー</string>
+    <string name="activity_setting">Sentien Launcher 設定</string>
     <string name="ui_search_hint">アプリ、連絡先、などを検索…</string>
     <string name="ui_item_search">%1$s “%2$s” の検索</string>
     <string name="ui_item_phone">“%s” の通話</string>
@@ -17,7 +17,7 @@
     <string name="ui_empty_2">常に履歴を表示する</string>
     <string name="ui_empty_2_sub">高速アクセス用</string>
     <string name="ui_empty_3">最も使用するアプリに素早くアクセス</string>
-    <string name="ui_empty_3_sub">Zeno ランチャーはあなたの習慣から学習します</string>
+    <string name="ui_empty_3_sub">Sentien Launcher ランチャーはあなたの習慣から学習します</string>
     <string name="contacts_name">連絡先</string>
     <string name="search_name">Web 検索プロバイダー</string>
     <string name="settings_name">デバイス設定</string>
@@ -66,10 +66,10 @@
     <string name="reset_warn">履歴をリセットしてもよろしいですか?</string>
     <string name="enable_phone">着信の履歴を表示</string>
     <string name="enable_app">最近インストールしたアプリの履歴を表示</string>
-    <string name="reset_excluded_apps_name">Zenoアプリから除外されたアプリの一覧をリセット</string>
+    <string name="reset_excluded_apps_name">Sentienアプリから除外されたアプリの一覧をリセット</string>
     <string name="reset_excluded_apps_warn">除外されたアプリ一覧をリセットしてもよろしいですか\?</string>
     <string name="excluded_app_list_erased">除外アプリの一覧が消去されました。</string>
-    <string name="excluded_app_list_added">アプリを Zeno から除外しました。Zeno の設定でリセットします</string>
+    <string name="excluded_app_list_added">アプリを Sentien Launcher から除外しました。Sentien Launcher の設定でリセットします</string>
     <string name="menu_exclude">アプリを除外 …</string>
     <string name="reset_favorites_name">お気に入りのリストをリセット</string>
     <string name="reset_favorites_warn">お気に入りをリセットしてもよろしいですか?</string>
@@ -82,11 +82,11 @@
     <string name="icons_pack_default_name">システム アイコン</string>
     <string name="items_title">%dアイテム</string>
     <string name="restart_desc">テーマの問題と新しい連絡先が表示されないのを修正します</string>
-    <string name="restart_name">Zeno を再起動</string>
-    <string name="restart_warn">Zeno を再起動してもよろしいですか? Zeno がデフォルトのランチャーではない場合、アプリは終了します。</string>
+    <string name="restart_name">Sentien Launcher を再起動</string>
+    <string name="restart_warn">Sentien Launcher を再起動してもよろしいですか? Sentien Launcher がデフォルトのランチャーではない場合、アプリは終了します。</string>
     <string name="freeze_history_name">履歴を凍結</string>
     <string name="freeze_history_warn">履歴を凍結して、すべての更新をオフにしてよろしいですか? 履歴はもう変更されません。</string>
-    <string name="ui_excluded_apps">Zenoから除外されたアプリの表示または編集</string>
+    <string name="ui_excluded_apps">Sentienから除外されたアプリの表示または編集</string>
     <string name="ui_excluded_apps_dialog_title">除外するアプリを選択</string>
     <string name="ui_excluded_apps_not_found">アプリは除外されていません</string>
     <string name="search_providers_title">Web 検索プロバイダーを選択</string>
@@ -161,7 +161,7 @@
     <string name="history_favorites_summary">お気に入りをリセット、お気に入りバーを削除…</string>
     <string name="freeze_history_summary">チェックを外すまでそのまま履歴を保存します</string>
     <string name="title_wallpaper">ライブ壁紙インタラクション</string>
-    <string name="enable_favorites_bar_summary_off">Zenoのアイコンを押したときだけお気に入りを表示します</string>
+    <string name="enable_favorites_bar_summary_off">Sentienのアイコンを押したときだけお気に入りを表示します</string>
     <string name="enable_favorites_bar_summary_on">検索バーの上にお気に入りを表示します</string>
     <string name="get_help">ヘルプを参照</string>
     <string name="permission_denied">アクセスが拒否されました</string>
@@ -173,24 +173,24 @@
     <string name="wp_animate_sides_desc">スクロールの後、壁紙は左または右に固定します</string>
     <string name="colors">色</string>
     <string name="black_notification_icons">通知アイコンを黒で表示</string>
-    <string name="shortcuts_no_host_permission">Zeno はもうメインのランチャーではないので、ショートカットにアクセスできません。</string>
-    <string name="unable_add_shortcut">ショートカットを追加できません (Zeno の設定でショートカットプロバイダーがオフです)</string>
+    <string name="shortcuts_no_host_permission">Sentien Launcher はもうメインのランチャーではないので、ショートカットにアクセスできません。</string>
+    <string name="unable_add_shortcut">ショートカットを追加できません (Sentien Launcher の設定でショートカットプロバイダーがオフです)</string>
     <string name="screen_toggle_tags">タグメニューをカスタマイズ</string>
     <string name="pref_toggle_tags_select">メニューに表示するタグ</string>
-    <string name="ctx_menu">Zeno メニュー</string>
+    <string name="ctx_menu">Sentien Launcher メニュー</string>
     <string name="pref_tags_menu">メニューにタグを追加</string>
     <string name="popup_tags_title">利用可能なタグ</string>
     <string name="popup_tags_actions">使用可能なアクション</string>
     <string name="show_history">履歴を表示</string>
-    <string name="unable_to_initialize_shortcuts">ショートカットを初期化できません。Zeno がデフォルトのランチャーになっていますか?</string>
+    <string name="unable_to_initialize_shortcuts">ショートカットを初期化できません。Sentien Launcher がデフォルトのランチャーになっていますか?</string>
     <string name="reset_excluded_from_history_apps_name">履歴から除外されたアプリの一覧をリセット</string>
     <string name="reset_excluded_from_history_apps_warn">除外された履歴のアプリ一覧をリセットしてもよろしいですか\?</string>
     <string name="settings_excluded_apps">除外されたアプリ</string>
     <string name="ui_excluded_from_history_apps">履歴から除外されたアプリの表示または編集</string>
-    <string name="excluded_app_history_added">アプリを履歴から除外しました。Zeno の設定でリセットします</string>
-    <string name="menu_exclude_kiss">Zeno から</string>
+    <string name="excluded_app_history_added">アプリを履歴から除外しました。Sentien Launcher の設定でリセットします</string>
+    <string name="menu_exclude_kiss">Sentien Launcher から</string>
     <string name="menu_exclude_history">履歴から</string>
-    <string name="pref_hide_circle">Zeno 枠を非表示</string>
+    <string name="pref_hide_circle">Sentien Launcher 枠を非表示</string>
     <string name="pref_hide_circle_desc">アプリ一覧はアクセス可能です</string>
     <string name="pref_tags_menu_dismiss">選択した後にタグメニューを閉じる</string>
     <string name="show_untagged">タグなしを表示</string>
@@ -198,13 +198,13 @@
     <string name="history_sort_name">履歴の並び替え</string>
     <string name="history_sort_desc">履歴のエントリーをアルファベット順に並べ替えます</string>
     <string name="contacts_call_on_click">クリックして連絡先を呼び出す</string>
-    <string name="swap_kiss_button_with_menu">右側の Zeno ボタン</string>
+    <string name="swap_kiss_button_with_menu">右側の Sentien Launcher ボタン</string>
     <string name="enable_gestures">空の領域でジェスチャーを有効にする</string>
     <string name="enable_gestures_desc">(↑ キーボード, ↓ 通知)</string>
     <string name="keyboard_suggestions">オートコンプリート/提案を有効にする</string>
     <string name="notification_support">通知をアプリの上にドット表示する</string>
-    <string name="notification_dialog">次のメニューで「Zeno」をチェックしてオンにします。</string>
-    <string name="cant_pin_shortcut">ショートカットを追加できませんでした。Zenoはデフォルトのランチャーですか\?</string>
+    <string name="notification_dialog">次のメニューで「Sentien」をチェックしてオンにします。</string>
+    <string name="cant_pin_shortcut">ショートカットを追加できませんでした。Sentienはデフォルトのランチャーですか\?</string>
     <string name="search_results_options">検索結果</string>
     <string name="search_provider_toggle">Web検索プロバイダーへのリンク</string>
     <string name="copy_confirmation">クリップボードにコピーしました</string>
@@ -215,5 +215,5 @@
     <string name="pref_fav_tags_select">fav バーに表示するタグ</string>
     <string name="pref_fav_tags_drawable_desc">多くの fav タグで使用するメモリを減らすにはオフにします</string>
     <string name="pref_fav_tags_drawable">fav タグのアイコンを生成する</string>
-    <string name="cant_save_shortcuts">ショートカットを追加できませんでした。Zenoはデフォルトのランチャーですか\?</string>
+    <string name="cant_save_shortcuts">ショートカットを追加できませんでした。Sentienはデフォルトのランチャーですか\?</string>
 </resources>

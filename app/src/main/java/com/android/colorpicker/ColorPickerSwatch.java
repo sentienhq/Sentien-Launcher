@@ -24,7 +24,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.sentienhq.zeno.R;
+import com.sentienhq.launcher.R;
 
 /**
  * Creates a circular swatch of a specified color.  Adds a checkmark if marked as checked.

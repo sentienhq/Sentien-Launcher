@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="activity_setting">Nastavení Zeno</string>
+    <string name="activity_setting">Nastavení Sentien Launcher</string>
     <string name="ui_search_hint">Vyhledat aplikace, kontanty, …</string>
     <string name="ui_item_search">%1$s Vyhledat “%2$s”</string>
     <string name="ui_item_phone">Volat “%s”</string>
@@ -14,7 +14,7 @@
     <string name="ui_empty_2">Vždy zobrazovat historii</string>
     <string name="ui_empty_2_sub">Pro rychlý přístup</string>
     <string name="ui_empty_3">Rychlý přístup k nejvíce používaným aplikacím</string>
-    <string name="app_name">Spouštěč Zeno</string>
+    <string name="app_name">Spouštěč Sentien Launcher</string>
     <string name="contacts_name">Kontakty</string>
     <string name="search_name">Poskytovatelé webového vyhledávání</string>
     <string name="settings_name">Nastavení zařízení</string>
@@ -34,16 +34,16 @@
     <string name="ui_item_visit">Navštívit “%1$s”</string>
     <string name="title_advanced">Pokročilá nastavení</string>
     <string name="ui_empty_1">Začít hledat</string>
-    <string name="ui_empty_3_sub">Spouštěč Zeno se učí z vašich zvyků</string>
+    <string name="ui_empty_3_sub">Spouštěč Sentien Launcher se učí z vašich zvyků</string>
     <string name="shortcuts_name">Zkratky</string>
     <string name="main_kiss">Zobrazit seznam aplikací</string>
     <string name="reset_name">Vynulovat historii</string>
-    <string name="reset_excluded_apps_name">Obnovit seznam vyloučených aplikací z Zeno</string>
+    <string name="reset_excluded_apps_name">Obnovit seznam vyloučených aplikací z Sentien Launcher</string>
     <string name="reset_excluded_apps_warn">Opravdu chcete obnovit vyloučené ze seznamu programů\?</string>
     <string name="reset_excluded_from_history_apps_name">Obnovit seznam vyloučených aplikací z historie</string>
     <string name="reset_excluded_from_history_apps_warn">Opravdu chcete obnovit vyloučené ze seznamu programů historie\?</string>
     <string name="settings_excluded_apps">Vyloučené programy</string>
-    <string name="ui_excluded_apps">Zobrazit nebo upravit aplikace vyloučené z Zeno</string>
+    <string name="ui_excluded_apps">Zobrazit nebo upravit aplikace vyloučené z Sentien Launcher</string>
     <string name="ui_excluded_from_history_apps">Zobrazit nebo upravit vyloučené aplikace z historie</string>
     <string name="ui_excluded_apps_dialog_title">Označit aplikace, které chcete vyloučit</string>
     <string name="ui_excluded_apps_not_found">Nebyly vyloučeny žádné programy</string>
@@ -81,8 +81,8 @@
     <string name="menu_favorites_add">Přidat do oblíbených</string>
     <string name="settings_nfc">NFC</string>
     <string name="items_title" tools:ignore="PluralsCandidate">%d předmětů</string>
-    <string name="restart_name">Restartovat Zeno</string>
-    <string name="restart_warn">Opravdu chcete restartovat Zeno\? Pokud Zeno není váš výchozí spouštěč, aplikace se pouze vypne.</string>
+    <string name="restart_name">Restartovat Sentien Launcher</string>
+    <string name="restart_warn">Opravdu chcete restartovat Sentien Launcher\? Pokud Sentien Launcher není váš výchozí spouštěč, aplikace se pouze vypne.</string>
     <string name="freeze_history_warn">Opravdu chcete zmrazit historii a vypnout další aktualizace\? Vaše historie se už nezmění.</string>
     <string name="search_providers_title">Vybrat poskytovatele webového vyhledávání</string>
     <string name="history_mode_desc">Vyberte, jak by měla být historie seřazena</string>
@@ -110,10 +110,10 @@
     <string name="search_provider_error_exists">Poskytovatel s daným jménem již existuje</string>
     <string name="number_of_display_items">Maximální počet výsledků ve vyhledávání a historii</string>
     <string name="providers_summary">Upravit výsledky vyhledávání, přidat vlastní vyhledávací engine, …</string>
-    <string name="unable_add_shortcut">Nepodařilo se přidat zkratky (poskytovatel zkratek je vypnut v nastavení Zeno)</string>
-    <string name="unable_to_initialize_shortcuts">Nepodařily se inicializovat zkratky. Je Zeno váš výchozí spouštěč\?</string>
+    <string name="unable_add_shortcut">Nepodařilo se přidat zkratky (poskytovatel zkratek je vypnut v nastavení Sentien Launcher)</string>
+    <string name="unable_to_initialize_shortcuts">Nepodařily se inicializovat zkratky. Je Sentien Launcher váš výchozí spouštěč\?</string>
     <string name="pref_hide_circle_desc">Seznam aplikací bude stále k dispozici</string>
-    <string name="menu_exclude_kiss">od Zeno</string>
+    <string name="menu_exclude_kiss">od Sentien Launcher</string>
     <string name="menu_exclude_history">z historie</string>
     <string name="contacts_call_on_click">Stiskni pro zavolání kontaktu</string>
     <string name="keyboard_suggestions">Zapnout automatické doplnění/návrhy</string>

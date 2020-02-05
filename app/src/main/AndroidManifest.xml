@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.sentienhq.zeno">
+    package="com.sentienhq.launcher">
 
     <permission
         android:name="com.android.launcher.permission.INSTALL_SHORTCUT"
@@ -21,7 +21,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- Display notification drawer -->
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-    <!-- Ability to uninstall an app from Zeno -->
+    <!-- Ability to uninstall an app from Sentien Launcher -->
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
     <!--To run voice recognition for search-->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -40,7 +40,7 @@
         android:required="false" />
 
     <application
-        android:name="com.sentienhq.zeno.ZenoApplication"
+        android:name="com.sentienhq.launcher.LauncherApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
@@ -56,13 +56,13 @@
             android:value="3.0" />
 
         <!--
-        clearTaskOnLaunch: when viewing zeno settings, display the main activity when pressing home https://github.com/Neamar/KISS/issues/117
+        clearTaskOnLaunch: when viewing Sentien Launcher settings, display the main activity when pressing home https://github.com/Neamar/KISS/issues/117
         launchMode=singleTop: call onNewIntent() when pressing home again while already viewing main activity, also redisplay main activity when viewing full-screen contact from picture
         windowSoftInputMode: hide keyboard by default
         stateNotNeeded: rebuild the whole UI each time onResume() is called
         -->
         <activity
-            android:name="com.sentienhq.zeno.MainActivity"
+            android:name="com.sentienhq.launcher.MainActivity"
             android:clearTaskOnLaunch="true"
             android:excludeFromRecents="true"
             android:label="@string/app_name"
@@ -89,7 +89,7 @@
                 android:resource="@drawable/ic_launcher" />
         </activity>
         <activity
-            android:name="com.sentienhq.zeno.DummyActivity"
+            android:name="com.sentienhq.launcher.DummyActivity"
             android:enabled="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -99,26 +99,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.sentienhq.zeno.SettingsActivity"
+            android:name="com.sentienhq.launcher.SettingsActivity"
             android:label="@string/activity_setting"
             android:theme="@style/SettingTheme"
-            android:parentActivityName="com.sentienhq.zeno.MainActivity">
+            android:parentActivityName="com.sentienhq.launcher.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.sentienhq.zeno.MainActivity" />
+                android:value="com.sentienhq.launcher.MainActivity" />
         </activity>
         <activity
-            android:name="com.sentienhq.zeno.kustomsupport.AutoFinishTransparentActivity"
+            android:name="com.sentienhq.launcher.kustomsupport.AutoFinishTransparentActivity"
             android:theme="@style/Theme.Transparent" />
 
         <provider
-            android:name="com.sentienhq.zeno.kustomsupport.Kustom5SecsProvider"
+            android:name="com.sentienhq.launcher.kustomsupport.Kustom5SecsProvider"
             android:authorities="${applicationId}.kustomsupport.kustom5secsprovider"
             android:exported="true"
             android:grantUriPermissions="true" />
 
         <receiver
-            android:name="com.sentienhq.zeno.broadcast.LocaleChangedReceiver"
+            android:name="com.sentienhq.launcher.broadcast.LocaleChangedReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -128,19 +128,19 @@
 
         <!-- On incoming calls, add user to history -->
         <receiver
-            android:name="com.sentienhq.zeno.broadcast.IncomingCallHandler"
+            android:name="com.sentienhq.launcher.broadcast.IncomingCallHandler"
             android:enabled="false">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
         </receiver>
 
-        <service android:name="com.sentienhq.zeno.dataprovider.AppProvider" />
-        <service android:name="com.sentienhq.zeno.dataprovider.ContactsProvider" />
-        <service android:name="com.sentienhq.zeno.dataprovider.SettingsProvider" />
-        <service android:name="com.sentienhq.zeno.dataprovider.ShortcutsProvider" />
+        <service android:name="com.sentienhq.launcher.dataprovider.AppProvider" />
+        <service android:name="com.sentienhq.launcher.dataprovider.ContactsProvider" />
+        <service android:name="com.sentienhq.launcher.dataprovider.SettingsProvider" />
+        <service android:name="com.sentienhq.launcher.dataprovider.ShortcutsProvider" />
 
-        <service android:name="com.sentienhq.zeno.notification.NotificationListener"
+        <service android:name="com.sentienhq.launcher.notification.NotificationListener"
             android:enabled="@bool/notification_service_enabled"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Zeno</string>
-    <string name="activity_setting">Параметры Zeno</string>
+    <string name="app_name">Sentien Launcher</string>
+    <string name="activity_setting">Параметры Sentien Launcher</string>
     <string name="ui_search_hint">Поиск…</string>
     <string name="ui_item_search">%1$s “%2$s”</string>
     <string name="ui_item_phone">Вызвать “%s”</string>
@@ -66,7 +66,7 @@
     <string name="reset_warn">История будет сброшена. Продолжить?</string>
     <string name="enable_phone">Входящие вызовы</string>
     <string name="enable_app">Новые приложения</string>
-    <string name="reset_excluded_apps_name">Сброс списка исключённых из Zeno</string>
+    <string name="reset_excluded_apps_name">Сброс списка исключённых из Sentien Launcher</string>
     <string name="reset_excluded_apps_warn">Список исключённых приложений будет сброшен. Продолжить\?</string>
     <string name="excluded_app_list_erased">Список исключённых приложений сброшен</string>
     <string name="excluded_app_list_added">Приложение можно восстановить в Параметрах</string>
@@ -81,12 +81,12 @@
     <string name="settings_nfc">Радиосвязь NFC</string>
     <string name="settings_tethering">Режим модема и точка доступа</string>
     <string name="restart_desc">Помогает при ошибках тем и невидимых новых контактах</string>
-    <string name="restart_name">Перезапуск Zeno</string>
-    <string name="restart_warn">Если Zeno не лончер по умолчанию, возможно, он будет закрыт. Продолжить\?</string>
+    <string name="restart_name">Перезапуск Sentien Launcher</string>
+    <string name="restart_warn">Если Sentien Launcher не лончер по умолчанию, возможно, он будет закрыт. Продолжить\?</string>
     <string name="items_title">%d элементов</string>
     <string name="freeze_history_name">Закрепить историю</string>
     <string name="freeze_history_warn">История не будет изменяться. Продолжить?</string>
-    <string name="ui_excluded_apps">Исключённые из Zeno приложения</string>
+    <string name="ui_excluded_apps">Исключённые из Sentien Launcher приложения</string>
     <string name="ui_excluded_apps_dialog_title">Выбор исключений</string>
     <string name="ui_excluded_apps_not_found">Нет приложений</string>
     <string name="search_providers_title">Выбор служб</string>
@@ -161,7 +161,7 @@
     <string name="history_favorites_summary">Сброс избранного, панель избранного, …</string>
     <string name="freeze_history_summary">Не менять историю, пока отмечено</string>
     <string name="title_wallpaper">Живые обои</string>
-    <string name="enable_favorites_bar_summary_off">Показать избранное нажатием значка Zeno</string>
+    <string name="enable_favorites_bar_summary_off">Показать избранное нажатием значка Sentien Launcher</string>
     <string name="enable_favorites_bar_summary_on">Показать избранное над панелью поиска</string>
     <string name="get_help">Получить помощь</string>
     <string name="permission_denied">Действие запрещено системой</string>
@@ -173,17 +173,17 @@
     <string name="wp_animate_sides_desc">Удерживать обои у края после прокрутки</string>
     <string name="colors">Цвет</string>
     <string name="black_notification_icons">Чёрные значки уведомлений</string>
-    <string name="shortcuts_no_host_permission">Zeno не лончер по умолчанию и не имеет доступа к ярлыкам.</string>
-    <string name="unable_add_shortcut">Не удалось добавить ярлыки (провайдер отключён в параметрах Zeno)</string>
+    <string name="shortcuts_no_host_permission">Sentien Launcher не лончер по умолчанию и не имеет доступа к ярлыкам.</string>
+    <string name="unable_add_shortcut">Не удалось добавить ярлыки (провайдер отключён в параметрах Sentien Launcher)</string>
     <string name="screen_toggle_tags">Меню тегов</string>
     <string name="pref_toggle_tags_select">Теги для меню</string>
-    <string name="ctx_menu">Меню Zeno</string>
+    <string name="ctx_menu">Меню Sentien Launcher</string>
     <string name="pref_tags_menu">Меню тегов</string>
     <string name="popup_tags_title">Теги</string>
     <string name="popup_tags_actions">Действия</string>
     <string name="show_history">История</string>
-    <string name="unable_to_initialize_shortcuts">Сбой инициализации ярлыков. Zeno является лончером по умолчанию?</string>
-    <string name="pref_hide_circle">Скрыть круг Zeno</string>
+    <string name="unable_to_initialize_shortcuts">Сбой инициализации ярлыков. Sentien Launcher является лончером по умолчанию?</string>
+    <string name="pref_hide_circle">Скрыть круг Sentien Launcher</string>
     <string name="pref_hide_circle_desc">Но список приложений будет доступен</string>
     <string name="pref_tags_menu_dismiss">Закрыть меню после выбора</string>
     <string name="show_untagged">Без тегов</string>
@@ -192,19 +192,19 @@
     <string name="reset_excluded_from_history_apps_warn">Список исключённых из истории приложений будет сброшен. Продолжить\?</string>
     <string name="settings_excluded_apps">Исключённые приложения</string>
     <string name="ui_excluded_from_history_apps">Исключённые из истории приложения</string>
-    <string name="excluded_app_history_added">Приложение исключено из истории. Восстановление в параметрах Zeno</string>
-    <string name="menu_exclude_kiss">из Zeno</string>
+    <string name="excluded_app_history_added">Приложение исключено из истории. Восстановление в параметрах Sentien Launcher</string>
+    <string name="menu_exclude_kiss">из Sentien Launcher</string>
     <string name="menu_exclude_history">из истории</string>
     <string name="history_sort_name">Сортировка истории</string>
     <string name="history_sort_desc">Сортировать элементы истории по алфавиту</string>
     <string name="contacts_call_on_click">Вызов контактов нажатием</string>
-    <string name="swap_kiss_button_with_menu">Круг Zeno справа</string>
+    <string name="swap_kiss_button_with_menu">Круг Sentien Launcher справа</string>
     <string name="enable_gestures">Жесты в пустых зонах</string>
     <string name="enable_gestures_desc">(↑ клавиатура, ↓ уведомления)</string>
     <string name="keyboard_suggestions">Автодополнение / варианты слов</string>
     <string name="notification_support">Точка на приложениях с уведомлениями</string>
-    <string name="notification_dialog">В следующем меню включите доступ для Zeno</string>
-    <string name="cant_pin_shortcut">Не удаётся создать ярлык. Zeno является лончером по умолчанию\?</string>
+    <string name="notification_dialog">В следующем меню включите доступ для Sentien Launcher</string>
+    <string name="cant_pin_shortcut">Не удаётся создать ярлык. Sentien Launcher является лончером по умолчанию\?</string>
     <string name="search_results_options">Результаты поиска</string>
     <string name="search_provider_toggle">Ссылки на службы поиска</string>
     <string name="copy_confirmation">Скопировано в буфер</string>
@@ -215,5 +215,5 @@
     <string name="pref_fav_tags_select">Теги для избранного</string>
     <string name="pref_fav_tags_drawable_desc">Отключите для экономии памяти при избытке избранных тегов</string>
     <string name="pref_fav_tags_drawable">Создать значки для тегов избранного</string>
-    <string name="cant_save_shortcuts">Не удаётся создать ярлыки. Zeno является лончером по умолчанию\?</string>
+    <string name="cant_save_shortcuts">Не удаётся создать ярлыки. Sentien Launcher является лончером по умолчанию\?</string>
 </resources>

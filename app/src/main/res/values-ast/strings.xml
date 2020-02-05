@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="app_name">Llanzador Zeno</string>
-    <string name="activity_setting">Axustes de Zeno</string>
+    <string name="app_name">Llanzador Sentien Launcher</string>
+    <string name="activity_setting">Axustes de Sentien Launcher</string>
     <string name="ui_search_hint">Gueta aplicaciones, contautos…</string>
     <string name="ui_item_search">%1$s Guetar «%2$s»</string>
     <string name="ui_item_phone">Llamar a «%s»</string>
@@ -14,7 +14,7 @@
     <string name="ui_empty_1">Entama guetando daqué</string>
     <string name="ui_empty_1_sub">Aplicaciones, contautos, axustes…</string>
     <string name="ui_empty_3">Accesu rápidu a les apliacaciones más usaes</string>
-    <string name="ui_empty_3_sub">El llanzador Zeno deprende de los tos vezos</string>
+    <string name="ui_empty_3_sub">El llanzador Sentien Launcher deprende de los tos vezos</string>
 
     <string name="contacts_name">Contautos</string>
 
@@ -53,7 +53,7 @@
 
     <string name="ui_item_contact_hint_call">Llamar a</string>
 
-    <string name="reset_name">Reanicia la to historia de Zeno</string>
+    <string name="reset_name">Reanicia la to historia de Sentien Launcher</string>
     <string name="keyboard_name">Amosar tecláu nel aniciu</string>
     <string name="portrait_title">Forciar mou vertical</string>
     <string name="root_mode_desc">Si ta disponible, úsalu pa hibernar aplicaciones</string>

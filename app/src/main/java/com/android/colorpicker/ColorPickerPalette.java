@@ -27,7 +27,7 @@ import android.widget.TableRow;
 
 import com.android.colorpicker.ColorPickerSwatch.OnColorSelectedListener;
 
-import com.sentienhq.zeno.R;
+import com.sentienhq.launcher.R;
 
 /**
  * A color picker custom view which creates an grid of color squares.  The number of squares per

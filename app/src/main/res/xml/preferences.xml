@@ -5,7 +5,7 @@
         android:key="history_category"
         android:summary="@string/history_settings_summary"
         android:title="@string/title_history">
-        <com.sentienhq.zeno.preference.ResetPreference
+        <com.sentienhq.launcher.preference.ResetPreference
             android:dialogMessage="@string/reset_warn"
             android:key="reset"
             android:order="10"
@@ -25,13 +25,13 @@
             android:order="46"
             android:summary="@string/history_mode_desc"
             android:title="@string/history_mode_name" />
-        <com.sentienhq.zeno.preference.SwitchPreference
+        <com.sentienhq.launcher.preference.SwitchPreference
             android:defaultValue="false"
             android:key="sort-history"
             android:order="47"
             android:summary="@string/history_sort_desc"
             android:title="@string/history_sort_name" />
-        <com.sentienhq.zeno.preference.FreezeHistorySwitch
+        <com.sentienhq.launcher.preference.FreezeHistorySwitch
             android:defaultValue="false"
             android:key="freeze-history"
             android:order="48"
@@ -40,11 +40,11 @@
         <PreferenceCategory
             android:order="50"
             android:title="@string/alternate_history_inputs">
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="enable-phone-history"
                 android:title="@string/enable_phone" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="enable-app-history"
                 android:title="@string/enable_app" />
@@ -53,12 +53,12 @@
             android:key="exclude_apps_category"
             android:order="53"
             android:title="@string/settings_excluded_apps">
-            <com.sentienhq.zeno.preference.ResetExcludedFromHistoryAppsPreference
+            <com.sentienhq.launcher.preference.ResetExcludedFromHistoryAppsPreference
                 android:dialogMessage="@string/reset_excluded_from_history_apps_warn"
                 android:key="reset-excluded-from-history-apps"
                 android:order="56"
                 android:title="@string/reset_excluded_from_history_apps_name" />
-            <com.sentienhq.zeno.preference.ResetExcludedAppsPreference
+            <com.sentienhq.launcher.preference.ResetExcludedAppsPreference
                 android:dialogMessage="@string/reset_excluded_apps_warn"
                 android:key="reset-excluded-apps"
                 android:order="57"
@@ -70,17 +70,17 @@
         android:key="history_favorites"
         android:summary="@string/history_favorites_summary"
         android:title="@string/title_favorites">
-        <com.sentienhq.zeno.preference.ResetFavoritesPreference
+        <com.sentienhq.launcher.preference.ResetFavoritesPreference
             android:dialogMessage="@string/reset_favorites_warn"
             android:key="reset"
             android:title="@string/reset_favorites_name" />
-        <com.sentienhq.zeno.preference.SwitchPreference
+        <com.sentienhq.launcher.preference.SwitchPreference
             android:defaultValue="false"
             android:key="enable-favorites-bar"
             android:summaryOff="@string/enable_favorites_bar_summary_off"
             android:summaryOn="@string/enable_favorites_bar_summary_on"
             android:title="@string/enable_favorites_bar" />
-        <com.sentienhq.zeno.preference.SwitchPreference
+        <com.sentienhq.launcher.preference.SwitchPreference
             android:defaultValue="false"
             android:key="exclude-favorites"
             android:title="@string/exclude_favorites" />
@@ -94,7 +94,7 @@
         android:summary="@string/user_interface_summary"
         android:title="@string/title_ui">
         <ListPreference
-            android:defaultValue="zeno-dark"
+            android:defaultValue="sentien-dark"
             android:entries="@array/themesEntries"
             android:entryValues="@array/themesValues"
             android:key="theme"
@@ -104,37 +104,37 @@
             android:key="icons-pack"
             android:title="@string/icons_pack_name" />
         <PreferenceCategory android:title="@string/colors" android:key="colors-section">
-            <com.sentienhq.zeno.preference.ColorPreference
+            <com.sentienhq.launcher.preference.ColorPreference
                 android:key="notification-bar-color"
                 android:title="@string/notification_bar_color" />
-            <com.sentienhq.zeno.preference.ColorPreference
+            <com.sentienhq.launcher.preference.ColorPreference
                 android:key="primary-color"
                 android:title="@string/main_color" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:key="black-notification-icons"
                 android:title="@string/black_notification_icons" />
         </PreferenceCategory>
         <PreferenceCategory android:title="@string/misc">
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:key="transparent-search"
                 android:title="@string/transparent_search_bar" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:key="transparent-favorites"
                 android:title="@string/transparent_favorites_bar" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="large-search-bar"
                 android:title="@string/large_search_bar" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="pref-rounded-list"
                 android:title="@string/rounded_list" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:key="pref-rounded-bars"
                 android:title="@string/rounded_bars" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="pref-swap-kiss-button-with-menu"
                 android:title="@string/swap_kiss_button_with_menu" />
@@ -145,11 +145,11 @@
         android:summary="@string/user_experience_summary"
         android:title="@string/title_ux">
         <PreferenceCategory android:title="@string/keyboard_options">
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:key="display-keyboard"
                 android:title="@string/keyboard_name" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="enable-suggestions-keyboard"
                 android:title="@string/keyboard_suggestions" />
@@ -157,61 +157,61 @@
         <PreferenceCategory
             android:key="history-hide-section"
             android:title="@string/history_hide_name">
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:key="history-hide"
                 android:summary="@string/history_hide_desc"
                 android:title="@string/history_hide_name" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:dependency="history-hide"
                 android:key="history-onclick"
                 android:title="@string/history_onclick_name" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:dependency="history-hide"
                 android:key="favorites-hide"
                 android:title="@string/favorites_hide" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:key="pref-hide-navbar"
                 android:summary="@string/pref_hide_navbar_desc"
                 android:title="@string/pref_hide_navbar" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:key="pref-hide-statusbar"
                 android:summary="@string/pref_hide_statusbar_desc"
                 android:title="@string/pref_hide_statusbar" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="pref-hide-circle"
                 android:summary="@string/pref_hide_circle_desc"
                 android:title="@string/pref_hide_circle" />
         </PreferenceCategory>
         <PreferenceCategory android:title="@string/misc">
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="force-portrait"
                 android:title="@string/portrait_title" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:key="tags-visible"
                 android:title="@string/tags_visible" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="icons-hide"
                 android:summary="@string/icons_hide_desc"
                 android:title="@string/icons_hide_main" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="pref-fav-tags-drawable"
                 android:summary="@string/pref_fav_tags_drawable_desc"
                 android:title="@string/pref_fav_tags_drawable" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="call-contact-on-click"
                 android:title="@string/contacts_call_on_click" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:key="enable-gestures"
                 android:summary="@string/enable_gestures_desc"
@@ -220,27 +220,27 @@
         <PreferenceScreen
             android:key="wallpaper-holder"
             android:title="@string/title_wallpaper">
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:key="lwp-touch"
                 android:title="@string/lwp_touch" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="lwp-drag"
                 android:summary="@string/lwp_drag_desc"
                 android:title="@string/lwp_drag" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="wp-drag-animate"
                 android:summary="@string/wp_drag_animate_desc"
                 android:title="@string/wp_drag_animate" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="true"
                 android:dependency="wp-drag-animate"
                 android:key="wp-animate-center"
                 android:summary="@string/wp_animate_center_desc"
                 android:title="@string/wp_animate_center" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:dependency="wp-drag-animate"
                 android:key="wp-animate-sides"
@@ -248,15 +248,15 @@
                 android:title="@string/wp_animate_sides" />
         </PreferenceScreen>
         <PreferenceScreen android:title="@string/screen_toggle_tags">
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="pref-tags-menu"
                 android:title="@string/pref_tags_menu" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="pref-show-untagged"
                 android:title="@string/pref_show_untagged" />
-            <com.sentienhq.zeno.preference.SwitchPreference
+            <com.sentienhq.launcher.preference.SwitchPreference
                 android:defaultValue="false"
                 android:key="pref-tags-menu-dismiss"
                 android:title="@string/pref_tags_menu_dismiss" />
@@ -273,33 +273,33 @@
         android:summary="@string/providers_summary"
         android:title="@string/title_providers">
         <PreferenceCategory android:title="@string/search_results_options">
-        <com.sentienhq.zeno.preference.SwitchPreference
+        <com.sentienhq.launcher.preference.SwitchPreference
             android:defaultValue="true"
             android:key="enable-contacts"
             android:title="@string/contacts_name" />
-        <com.sentienhq.zeno.preference.SwitchPreference
+        <com.sentienhq.launcher.preference.SwitchPreference
             android:defaultValue="true"
             android:key="enable-settings"
             android:title="@string/settings_name" />
-        <com.sentienhq.zeno.preference.SwitchPreference
+        <com.sentienhq.launcher.preference.SwitchPreference
             android:defaultValue="true"
             android:key="enable-shortcuts"
             android:title="@string/shortcuts_name" />
-        <com.sentienhq.zeno.preference.ResetShortcutsPreference
+        <com.sentienhq.launcher.preference.ResetShortcutsPreference
             android:dialogMessage="@string/shortcuts_reset_desc"
             android:key="reset"
             android:title="@string/shortcuts_reset" />
-        <com.sentienhq.zeno.preference.SwitchPreference
+        <com.sentienhq.launcher.preference.SwitchPreference
             android:defaultValue="true"
             android:key="enable-search"
             android:title="@string/search_provider_toggle" />
         </PreferenceCategory>
         <PreferenceCategory android:title="@string/search_name">
-            <com.sentienhq.zeno.preference.AddSearchProviderPreference
+            <com.sentienhq.launcher.preference.AddSearchProviderPreference
                 android:key="custom-search-provider-add"
                 android:textColor="?attr/searchColor"
                 android:title="@string/custom_search_provider" />
-            <com.sentienhq.zeno.preference.ResetSearchProvidersPreference
+            <com.sentienhq.launcher.preference.ResetSearchProvidersPreference
                 android:dialogMessage="@string/search_provider_reset_desc"
                 android:key="reset"
                 android:title="@string/search_provider_reset" />
@@ -308,21 +308,21 @@
     <PreferenceScreen
         android:key="advanced"
         android:title="@string/title_advanced">
-        <com.sentienhq.zeno.preference.NotificationPreference
+        <com.sentienhq.launcher.preference.NotificationPreference
             android:defaultValue="true"
             android:dialogMessage="@string/notification_dialog"
             android:key="enable-notifications"
             android:title="@string/notification_support" />
-        <com.sentienhq.zeno.preference.DefaultLauncherPreference
+        <com.sentienhq.launcher.preference.DefaultLauncherPreference
             android:dialogMessage="@string/default_launcher_warn"
             android:key="default-launcher"
             android:title="@string/default_launcher_title" />
-        <com.sentienhq.zeno.preference.RootModeSwitch
+        <com.sentienhq.launcher.preference.RootModeSwitch
             android:defaultValue="false"
             android:key="root-mode"
             android:summary="@string/root_mode_desc"
             android:title="@string/root_mode_name" />
-        <com.sentienhq.zeno.preference.RestartPreference
+        <com.sentienhq.launcher.preference.RestartPreference
             android:dialogMessage="@string/restart_warn"
             android:key="restart"
             android:summary="@string/restart_desc"

@@ -24,7 +24,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import com.sentienhq.zeno.R;
+import com.sentienhq.launcher.R;
 
 /**
  * A dialog which takes in as input an array of colors and creates a palette allowing the user to

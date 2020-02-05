@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Zeno-launcherdas</string>
-    <string name="activity_setting">Zeno-instellingen</string>
+    <string name="app_name">Sentien-launcherdas</string>
+    <string name="activity_setting">Sentien-instellingen</string>
     <string name="ui_search_hint">Zoek apps, contacten, …</string>
     <string name="ui_item_search">%1$s Zoek naar “%2$s”</string>
     <string name="ui_item_phone">Bel “%s”</string>
@@ -16,7 +16,7 @@
     <string name="ui_empty_2">Laat altijd geschiedenis zien</string>
     <string name="ui_empty_2_sub">Voor snelle toegang</string>
     <string name="ui_empty_3">Snelle toegang tot uw meest gebruikte apps</string>
-    <string name="ui_empty_3_sub">Zeno-launcher leert van jouw gebruik</string>
+    <string name="ui_empty_3_sub">Sentien-launcher leert van jouw gebruik</string>
     <string name="contacts_name">Contacten</string>
     <string name="search_name">Zoekmachines</string>
     <string name="settings_name">Apparaatinstellingen</string>
@@ -57,9 +57,9 @@
     <string name="toast_hibernate_error">%s kan niet gepauzeerd worden.</string>
     <string name="ui_item_visit">Bezoek “%1$s”</string>
     <string name="shortcuts_name">Snelkoppelingen</string>
-    <string name="reset_excluded_apps_name">Reset lijst van apps die uitgesloten zijn van Zeno</string>
+    <string name="reset_excluded_apps_name">Reset lijst van apps die uitgesloten zijn van Sentien Launcher</string>
     <string name="reset_excluded_apps_warn">Weet je zeker dat je de lijst met uitgesloten apps wil resetten?</string>
-    <string name="ui_excluded_apps">Bekijk of bewerk je apps die uitgesloten zijn van Zeno</string>
+    <string name="ui_excluded_apps">Bekijk of bewerk je apps die uitgesloten zijn van Sentien Launcher</string>
     <string name="ui_excluded_apps_dialog_title">Selecteer apps die je wil uitsluiten</string>
     <string name="ui_excluded_apps_not_found">Er zijn geen apps uitgesloten</string>
     <string name="reset_warn">Weet je zeker dat je jouw geschiedenis wil resetten?</string>
@@ -91,8 +91,8 @@
     <string name="tags_add_title">Voeg spatiegescheiden tags toe</string>
     <string name="tags_confirmation_added">Labels ingesteld</string>
     <string name="excluded_app_list_erased">Lijst van verborgen apps leeggemaakt.</string>
-    <string name="excluded_app_list_added">App verborgen in Zeno. Reset in de instellingen</string>
-    <string name="menu_exclude">Laat app niet zien in Zeno</string>
+    <string name="excluded_app_list_added">App verborgen in Sentien Launcher. Reset in de instellingen</string>
+    <string name="menu_exclude">Laat app niet zien in Sentien Launcher</string>
     <string name="menu_shortcut_remove">Verwijder shortcut</string>
     <string name="menu_phone_create">Contactpersoon creëren</string>
     <string name="toast_favorites_added">%s toegevoegd aan favorieten</string>
@@ -102,8 +102,8 @@
     <string name="exclude_favorites">Toon favorieten niet in geschiedenis</string>
     <string name="favorites_hide">Verberg favorietenbalk</string>
     <string name="restart_desc">Themaproblemen en contacten die niet worden weergegeven herstellen</string>
-    <string name="restart_name">Herstart Zeno</string>
-    <string name="restart_warn">Weet u zeker dat u Zeno wilt herstarten? Als Zeno niet uw standaard-beginscherm is, zal het programma simpelweg afsluiten.</string>
+    <string name="restart_name">Herstart Sentien Launcher</string>
+    <string name="restart_warn">Weet u zeker dat u Sentien Launcher wilt herstarten? Als Sentien Launcher niet uw standaard-beginscherm is, zal het programma simpelweg afsluiten.</string>
     <string name="default_launcher_title">Standaard-beginscherm wijzigen</string>
     <string name="items_title">%d items</string>
     <string name="alternate_history_inputs">Alternatieve geschiedenisinvoer</string>
@@ -159,7 +159,7 @@
     <string name="history_favorites_summary">Herstel uw favorieten, verwijder de favorietenbalk, …</string>
     <string name="freeze_history_summary">Geschiedenis behouden totdat dit wordt afgevinkt</string>
     <string name="title_wallpaper">Live achtergrond-interacties</string>
-    <string name="enable_favorites_bar_summary_off">Alleen favorieten weergeven na het drukken op het Zeno-pictogram</string>
+    <string name="enable_favorites_bar_summary_off">Alleen favorieten weergeven na het drukken op het Sentien Launcher-pictogram</string>
     <string name="enable_favorites_bar_summary_on">Favorieten weergeven boven de zoekbalk</string>
     <string name="get_help">Hulp verkrijgen</string>
     <string name="permission_denied">Toegang geweigerd</string>
@@ -167,15 +167,15 @@
     <string name="rounded_bars">Afgeronde balkhoeken</string>
     <string name="colors">Kleuren</string>
     <string name="black_notification_icons">Zwarte meldingspictogrammen gebruiken</string>
-    <string name="shortcuts_no_host_permission">Zeno is niet je standaard beginscherm meer en heeft dus geen toegang tot snelkoppelingen.</string>
-    <string name="unable_add_shortcut">Het toevoegen van snelkoppelingen is onmogelijk; de dienst is uitgeschakeld in de Zeno-instellingen)</string>
+    <string name="shortcuts_no_host_permission">Sentien Launcher is niet je standaard beginscherm meer en heeft dus geen toegang tot snelkoppelingen.</string>
+    <string name="unable_add_shortcut">Het toevoegen van snelkoppelingen is onmogelijk; de dienst is uitgeschakeld in de Sentien Launcher-instellingen)</string>
     <string name="wp_animate_center">Achtergrond centreren</string>
     <string name="wp_animate_center_desc">De achtergrond zal gecentreerd worden na scrollen</string>
     <string name="wp_animate_sides">Doorlopende achtergrond</string>
     <string name="wp_animate_sides_desc">De achtergrond zal doorlopen langs de linker- of rechterkant na scrollen</string>
     <string name="screen_toggle_tags">Labelbalk aanpassen</string>
     <string name="pref_toggle_tags_select">Te tonen labels op balk</string>
-    <string name="ctx_menu">Zeno-menu</string>
+    <string name="ctx_menu">Sentien-menu</string>
     <string name="pref_tags_menu">Labelsmenu inschakelen</string>
     <string name="popup_tags_title">Beschikbare labels</string>
     <string name="popup_tags_actions">Beschikbare acties</string>
