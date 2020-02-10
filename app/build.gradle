@@ -19,7 +19,7 @@ android {
         applicationId 'com.sentienhq.launcher'
         minSdkVersion 15
         targetSdkVersion 29
-        versionCode 163
+        versionCode 164
         versionName "3.11.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
