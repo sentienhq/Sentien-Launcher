@@ -1,0 +1,4 @@
+* Support for dummy voice commands
+* Add DDG as default search engine
+* Add Qwant as possible search engine
+* Set default UI to minimalistic
